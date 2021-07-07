@@ -382,7 +382,7 @@ a {
 
 .header {
   position: relative;
-  background-image: url("../img/header-bg.png");
+  background-image: url("../img/header-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -421,7 +421,7 @@ a {
   background-color: rgba(0, 0, 0, 0.686);
 }
 
-.header-top,
+.header-nav,
 .header-bottom {
   display: -webkit-box;
   display: -webkit-flex;
@@ -433,7 +433,7 @@ a {
           justify-content: space-between;
 }
 
-.header-top {
+.header-nav {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
@@ -482,26 +482,25 @@ a {
   color: #FFE427;
 }
 
-.header-text,
 .header-main,
 .header-title,
 .header-bottom {
   margin: 0 0 87px 0;
 }
 
-.header-title {
+.header-main .title {
+  margin: 0 0 87px 0;
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: 120px;
   line-height: 144px;
   color: white;
 }
-
-.header-about {
+.header-main .about {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 20px;
-  margin: 0 0 0 78px;
+  margin: 0 0 40px 78px;
   line-height: 35px;
   color: white;
 }
