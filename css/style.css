@@ -8,6 +8,9 @@
  */
 * {
   box-sizing: border-box;
+  font-family: "Roboto";
+  padding: 0;
+  margin: 0;
 }
 
 html {
@@ -373,7 +376,7 @@ a {
   z-index: 100;
 }
 
-.separated_yelllow {
+.separator_yelllow {
   border-bottom: 5px solid #FFE427;
 }
 
@@ -478,7 +481,6 @@ a {
   margin-right: 60px;
 }
 .nav-item a {
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 20px;
   color: white;
@@ -495,14 +497,12 @@ a {
 
 .header-main .title {
   margin: 0 0 87px 0;
-  font-family: "Roboto", sans-serif;
   font-weight: bolder;
   font-size: 120px;
   line-height: 144px;
   color: white;
 }
 .header-main .about {
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 20px;
   margin: 0 0 40px 78px;
@@ -521,7 +521,6 @@ a {
           align-items: flex-start;
 }
 .header-bottom .header-link {
-  font-family: "Roboto", sans-serif;
   font-size: 30px;
   color: white;
   margin: 0 0 0 78px;
@@ -549,7 +548,6 @@ a {
   margin-bottom: 20px;
 }
 .header-contacts a {
-  font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 20px;
   color: white;
@@ -603,7 +601,6 @@ a {
 }
 .steps-title h3 {
   display: inline-block;
-  font-family: "Roboto";
   font-size: 118px;
   font-weight: bold;
   color: white;
@@ -618,6 +615,7 @@ a {
   width: 100%;
   z-index: 12;
   margin-bottom: 150px;
+  padding: 0 10px;
 }
 
 .milestone-info {
@@ -652,7 +650,6 @@ a {
   max-width: 250px;
   padding: 50px 20px 0;
   background-color: rgba(0, 0, 0, 0.685);
-  font-family: "Roboto";
   color: white;
 }
 .milestone::after {
@@ -675,7 +672,6 @@ a {
 }
 .milestone .milestone-title {
   position: absolute;
-  font-family: "Roboto";
   font-size: 28px;
   font-weight: bold;
   top: -20px;
@@ -723,6 +719,7 @@ a {
   top: 63%;
   background-color: #fff;
 }
+
 .milestone-icon {
   -webkit-flex-shrink: 0;
       -ms-flex-negative: 0;
@@ -732,4 +729,157 @@ a {
   margin-top: 20px;
   border-radius: 50%;
   border: 4px solid white;
+}
+
+.get-consultation {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #FFE427;
+}
+.get-consultation a {
+  color: black;
+}
+
+.services {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 70px;
+}
+.services-title {
+  position: relative;
+  font-size: 60px;
+  margin: 0 0 40px 0;
+  padding: 0 0 30px 0;
+}
+.services-title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #FFE427;
+}
+
+.services-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.services-item {
+  position: relative;
+  height: 370px;
+  width: 43%;
+  margin: 40px;
+  background-color: #FFE427;
+}
+.services-item:hover .service-item-info {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #75d17d;
+}
+
+.services-item-title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+  padding: 0 0 55px 25px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.service-item-info {
+  display: none;
+}
+
+.service-item-main {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100% - 38px);
+  padding: 40px 0 40px 20px;
+}
+
+.service-item-price {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 40%;
+  font-weight: 500;
+  color: white;
+}
+.service-item-price .price {
+  font-size: 21px;
+  font-weight: bold;
+  color: #FFE427;
+}
+
+.service-item-features {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+  padding-bottom: 20px;
+  border-left: 3px dashed #FFE427;
+}
+.service-item-features .feature {
+  font-size: 15px;
+  margin-left: 15px;
+}
+
+.service-item-button {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #FFE427;
 }
