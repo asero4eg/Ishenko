@@ -13,6 +13,10 @@
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
+
 html {
   line-height: 1.15;
   /* 1 */
@@ -797,6 +801,7 @@ a {
   width: 43%;
   margin: 40px;
   background-color: #FFE427;
+  overflow: hidden;
 }
 .services-item:hover .service-item-info {
   display: block;
@@ -805,7 +810,13 @@ a {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #75d17d;
+  background-color: rgba(0, 0, 0, 0.57);
+}
+.services-item:hover .services-item-title {
+  -webkit-transform: translateY(-200px);
+      -ms-transform: translateY(-200px);
+          transform: translateY(-200px);
+  font-size: 60px;
 }
 
 .services-item-title {
@@ -821,6 +832,11 @@ a {
   padding: 0 0 55px 25px;
   font-size: 40px;
   font-weight: bold;
+  color: white;
+  -webkit-transition: font-size 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: font-size 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, font-size 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
 }
 
 .service-item-info {
@@ -874,12 +890,18 @@ a {
   border-left: 3px dashed #FFE427;
 }
 .service-item-features .feature {
-  font-size: 15px;
+  font-size: 18px;
+  font-weight: 500;
   margin-left: 15px;
+  color: white;
 }
 
 .service-item-button {
   text-align: center;
   padding: 10px 0;
   background-color: #FFE427;
+}
+.service-item-button a {
+  font-weight: 500;
+  color: black;
 }
