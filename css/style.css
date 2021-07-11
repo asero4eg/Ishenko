@@ -911,7 +911,6 @@ a {
   background-image: url("../img/about-bg.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  overflow: hidden;
 }
 .about-bg::before {
   display: block;
@@ -992,12 +991,139 @@ a {
   margin-bottom: 35px;
 }
 
+.form-bg {
+  position: relative;
+  background-image: url("../img/form-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.form-bg::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.686);
+}
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 110px;
+  padding-bottom: 345px;
+}
+
+.form {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 60px 25px;
+  max-width: 670px;
+  margin-right: 60px;
+  background-color: white;
+  border-radius: 5px;
+}
+.form input {
+  display: block;
+  width: 100%;
+  padding: 20px 0;
+  margin-bottom: 18px;
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+.form .subtext {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+.form button {
+  width: 100%;
+  background-color: #FFE427;
+  outline: none;
+  border: none;
+  padding: 25px 0;
+}
+.form button:hover {
+  cursor: pointer;
+  background-color: #f3d610;
+}
+.form button .btn-text {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.form-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.address {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: white;
+  font-size: 16px;
+  border-left: 3px dashed #FFE427;
+  padding-left: 75px;
+}
+
 .footer {
+  position: relative;
   padding-bottom: 35px;
+}
+
+.footer-map {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  top: -265px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.footer-map iframe {
+  width: 100%;
+  height: 530px;
 }
 
 .footer-info {
   text-align: center;
+  margin-top: 340px;
 }
 
 .company-title {
