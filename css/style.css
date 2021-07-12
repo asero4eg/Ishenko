@@ -381,7 +381,7 @@ a {
 }
 
 .separator_yelllow {
-  border-bottom: 5px solid #FFE427;
+  border-bottom: 5px solid #ffe427;
 }
 
 .content {
@@ -468,7 +468,7 @@ a {
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
   text-align: center;
-  color: #FFE427;
+  color: #ffe427;
 }
 
 .nav-list {
@@ -490,7 +490,7 @@ a {
   color: white;
 }
 .nav-item a:hover {
-  color: #FFE427;
+  color: #ffe427;
 }
 
 .header-main,
@@ -529,10 +529,10 @@ a {
   color: white;
   margin: 0 0 0 78px;
   padding-left: 10px;
-  border-left: 2px solid #FFE427;
+  border-left: 2px solid #ffe427;
 }
 .header-bottom .header-link a {
-  color: #FFE427;
+  color: #ffe427;
 }
 
 .header-contacts .header-contacts-phone {
@@ -687,7 +687,7 @@ a {
   position: relative;
   left: -10px;
   height: 2px;
-  border-bottom: 2px solid #FFE427;
+  border-bottom: 2px solid #ffe427;
 }
 
 .milestone-steps {
@@ -739,10 +739,10 @@ a {
   width: 100%;
   padding: 10px 0;
   text-align: center;
-  background-color: #FFE427;
+  background-color: #ffe427;
 }
 .get-consultation a {
-  color: black;
+  color: #1c1d23;
 }
 
 .services {
@@ -766,6 +766,7 @@ a {
   font-size: 60px;
   margin: 0 0 40px 0;
   padding: 0 0 30px 0;
+  color: #1c1d23;
 }
 .services-title::after {
   display: block;
@@ -778,7 +779,7 @@ a {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: #FFE427;
+  background-color: #ffe427;
 }
 
 .services-list {
@@ -801,7 +802,7 @@ a {
   height: 370px;
   width: 43%;
   margin: 40px;
-  background-color: #FFE427;
+  background-color: #ffe427;
 }
 .services-item:hover .service-item-info {
   display: block;
@@ -868,10 +869,10 @@ a {
 .service-item-price .price {
   font-size: 21px;
   font-weight: bold;
-  color: #FFE427;
+  color: #ffe427;
 }
 
-.service-item-features {
+.service-item-bullets {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -887,9 +888,9 @@ a {
           justify-content: space-between;
   width: 60%;
   padding-bottom: 20px;
-  border-left: 3px dashed #FFE427;
+  border-left: 3px dashed #ffe427;
 }
-.service-item-features .feature {
+.service-item-bullets .bullet {
   font-size: 18px;
   font-weight: 500;
   margin-left: 15px;
@@ -899,11 +900,11 @@ a {
 .service-item-button {
   text-align: center;
   padding: 10px 0;
-  background-color: #FFE427;
+  background-color: #ffe427;
 }
 .service-item-button a {
   font-weight: 500;
-  color: black;
+  color: #1c1d23;
 }
 
 .about-bg {
@@ -940,7 +941,8 @@ a {
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: #FFE427;
+  background-color: #ffe427;
+  color: #1c1d23;
 }
 
 .about-us-text {
@@ -970,7 +972,7 @@ a {
 
 .our-results-block {
   width: 31%;
-  border-right: 3px solid #FFE427;
+  border-right: 3px solid #ffe427;
   padding: 0 15px;
 }
 .our-results-block:last-child {
@@ -989,6 +991,94 @@ a {
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 35px;
+}
+
+.why-us {
+  padding: 70px 0 100px 0;
+}
+
+.why-us-title {
+  text-align: left;
+  font-size: 98px;
+  font-weight: bold;
+}
+
+.features-title {
+  position: relative;
+  margin-top: 30px;
+  font-size: 42px;
+  text-align: center;
+}
+
+.features-wrapper {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 65px;
+}
+
+.feature {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 280px;
+  min-height: 260px;
+  padding: 10px;
+  margin: 0 25px 50px;
+  box-shadow: 0px 4px 8px 0px #e2e2e2;
+}
+.feature-image {
+  width: 66px;
+  height: 66px;
+  border: 5px solid #1c1d23;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.feature-title {
+  position: relative;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  color: #1c1d23;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.feature-title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 4px;
+  width: 30%;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #ffe427;
+}
+.feature-text {
+  font-size: 15px;
+  text-align: center;
+  color: #1c1d23;
 }
 
 .form-bg {
@@ -1047,16 +1137,17 @@ a {
   padding: 20px 0;
   margin-bottom: 18px;
   text-align: center;
-  border: 2px solid black;
+  border: 2px solid #1c1d23;
   border-radius: 4px;
 }
 .form .subtext {
   font-size: 15px;
   margin-bottom: 20px;
+  color: #6d6d6d;
 }
 .form button {
   width: 100%;
-  background-color: #FFE427;
+  background-color: #ffe427;
   outline: none;
   border: none;
   padding: 25px 0;
@@ -1068,12 +1159,14 @@ a {
 .form button .btn-text {
   font-size: 20px;
   font-weight: bold;
+  color: #1c1d23;
 }
 
 .form-title {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 50px;
+  color: #1c1d23;
 }
 
 .address {
@@ -1092,13 +1185,13 @@ a {
           justify-content: space-between;
   color: white;
   font-size: 16px;
-  border-left: 3px dashed #FFE427;
+  border-left: 3px dashed #ffe427;
   padding-left: 75px;
 }
 
 .footer {
   position: relative;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 }
 
 .footer-map {
@@ -1107,8 +1200,12 @@ a {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  width: 100%;
+  width: 90%;
+  left: 50%;
   top: -265px;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -1123,7 +1220,7 @@ a {
 
 .footer-info {
   text-align: center;
-  margin-top: 340px;
+  margin-top: 310px;
 }
 
 .company-title {
@@ -1151,7 +1248,7 @@ a {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .links-list {
@@ -1167,5 +1264,10 @@ a {
 }
 .links-list a {
   font-weight: 700;
-  color: black;
+  color: #1c1d23;
+}
+
+.copyright {
+  font-size: 10px;
+  color: #6d6d6d;
 }
