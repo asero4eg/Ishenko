@@ -1361,9 +1361,12 @@ a {
   }
 }
 .gotop {
+  display: inline-block;
   position: fixed;
   opacity: 0;
-  right: -60px;
+  visibility: hidden;
+  cursor: pointer;
+  right: 20px;
   bottom: 20px;
   border-radius: 50%;
   background-color: #ffe427;
@@ -1376,7 +1379,7 @@ a {
   -webkit-transition: opacity 0.2s linear, right 0.1s ease-in;
   transition: opacity 0.2s linear, right 0.1s ease-in;
 }
-.gotop a {
+.gotop span {
   display: inline-block;
   vertical-align: middle;
   line-height: 50px;
@@ -1387,6 +1390,11 @@ a {
 }
 .gotop:hover {
   background-color: #f3d610;
+}
+
+.gotop.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .footer {
