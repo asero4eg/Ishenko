@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -389,6 +390,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 5rem;
   font-weight: bold;
+  color: #707070;
   text-align: center;
   margin-top: 100px;
   margin-bottom: 90px;
@@ -410,7 +412,7 @@ a {
 
 .header {
   position: relative;
-  background-image: url("../img/imgBG.jpg");
+  background-image: url("../img/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -422,7 +424,7 @@ a {
   height: 100%;
   top: 0;
   background-color: #000;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .header-contacts {
@@ -485,10 +487,24 @@ a {
 }
 
 .main-text {
+  position: relative;
   font-size: 13rem;
   text-align: center;
   color: white;
   margin: 110px 0 115px 0;
+  z-index: 1000;
+}
+.main-text::after {
+  content: "Узаконим самострой";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  right: 0;
+  font-size: 12rem;
+  color: transparent;
+  opacity: 0.5;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
 }
 
 .secondary-text {
@@ -513,7 +529,7 @@ a {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 155px;
+  margin-bottom: 100px;
 }
 .header .button-wrapper .text {
   font-family: "Roboto", sans-serif;
@@ -596,13 +612,15 @@ a {
   color: #ffee6daa;
 }
 
+.contact-us {
+  padding-top: 60px;
+}
 .contact-us .button-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   margin-left: 50%;
-  margin-top: 60px;
   width: 925px;
   transform: translateX(-50%);
 }
@@ -611,10 +629,10 @@ a {
   font-size: 1.5rem;
   color: black;
   text-align: center;
+  margin-bottom: 40px;
 }
 .contact-us .button-wrapper .button {
   width: 100%;
-  margin-top: 35px;
   margin-bottom: 30px;
   padding: 25px 0;
   background: #ffed6d;
@@ -637,7 +655,7 @@ a {
 .phone-call-wrapper {
   width: 100%;
 }
-.phone-call-wrapper .text {
+.phone-call-wrapper .phone-call-text {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   text-align: center;
@@ -717,7 +735,7 @@ a {
 .bullets-list .bullet {
   position: relative;
   padding: 0 0 0 15px;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .bullets-list .bullet::after {
   content: "";
@@ -731,13 +749,13 @@ a {
   background-color: #44ffe6;
 }
 .bullets-list .bullet:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .footnote {
   position: relative;
   padding: 0 0 0 15px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 40px;
 }
 .footnote::after {
@@ -856,7 +874,7 @@ a {
 }
 
 .documents-list {
-  padding: 0 15px 0 70px;
+  padding: 0 15px 0 120px;
 }
 .documents-list .document {
   font-family: "Roboto", sans-serif;
@@ -882,4 +900,15 @@ a {
   display: block;
   margin: 0 auto;
   transform: rotate(-90deg);
+}
+
+.geodezic-img {
+  background-image: url("../img/geodezic.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.geodezic {
+  padding: 240px 0;
 }
