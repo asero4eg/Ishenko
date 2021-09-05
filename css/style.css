@@ -641,12 +641,14 @@ a {
   color: white;
 }
 
-.contacts-left li {
+.contacts-right li {
+  font-family: "Roboto", sans-serif;
+}
+
+.contacts-left li a {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-size: 1.8rem;
-}
-.contacts-left li a {
   color: white;
 }
 .contacts-left .phone {
