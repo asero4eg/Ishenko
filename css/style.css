@@ -380,6 +380,28 @@ a {
     transform: scale(0.9);
   }
 }
+@-webkit-keyframes gotopAnim {
+  from {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(120%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
+@keyframes gotopAnim {
+  from {
+    transform: scale(100%);
+  }
+  50% {
+    transform: scale(120%);
+  }
+  to {
+    transform: scale(100%);
+  }
+}
 @font-face {
   font-family: "icomoon";
   src: url("../fonts/icomoon.eot?bzstkn");
@@ -476,6 +498,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 10px;
+  position: relative;
 }
 
 * {
@@ -544,6 +567,45 @@ a {
 
 .nav-links li a {
   text-decoration: none;
+}
+
+.gotop {
+  display: inline-block;
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+  right: 40px;
+  bottom: 40px;
+  border-radius: 50%;
+  background-color: #ffe427;
+  height: 50px;
+  width: 50px;
+  z-index: 1200;
+  text-align: center;
+  -webkit-animation: gotopAnim 1s ease-in 1s infinite;
+          animation: gotopAnim 1s ease-in 1s infinite;
+  transition: opacity 0.2s linear, visibility 0.1s ease-in;
+}
+.gotop::after {
+  display: inline-block;
+  content: "";
+  transform: rotateZ(270deg);
+  font-family: "icomoon";
+  font-size: 13px;
+  color: black;
+  vertical-align: middle;
+  line-height: 50px;
+  width: 100%;
+  font-weight: bold;
+}
+.gotop:hover {
+  background-color: #c2c20f;
+}
+
+.gotop.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 .header {
@@ -759,7 +821,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 18.7rem;
   font-weight: bold;
-  color: #F3F3F3;
+  color: #f3f3f3;
   z-index: 0;
 }
 .steps .step:last-child .number {
@@ -873,7 +935,7 @@ a {
 .service-info .title {
   padding-bottom: 35px;
   margin-bottom: 20px;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   border-bottom: 2px dashed gray;
 }
@@ -897,7 +959,7 @@ a {
 .bullets-list .bullet {
   position: relative;
   padding: 0 0 0 15px;
-  font-size: 2rem;
+  font-size: 1.7rem;
 }
 .bullets-list .bullet::after {
   content: "";
@@ -917,7 +979,7 @@ a {
 .footnote {
   position: relative;
   padding: 0 0 0 15px;
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 40px;
 }
 .footnote::after {
@@ -933,12 +995,14 @@ a {
 }
 
 .footnote-title {
+  font-size: 2rem;
   margin-bottom: 25px;
 }
 
 .footnote-price {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  font-size: 3.3rem;
 }
 
 .documents-link {
@@ -1004,7 +1068,8 @@ a {
 }
 
 .description-text {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  line-height: 2.5rem;
   margin-bottom: 60px;
 }
 
@@ -1043,9 +1108,8 @@ a {
 .documents-list .document {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  margin-top: 40px;
   border-bottom: 2px dashed gray;
-  padding-bottom: 20px;
+  padding: 20px 0;
 }
 
 .documents-footer {
