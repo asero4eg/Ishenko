@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +11,11 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
   <body>
+    <div class="preloader">
+      <div class="loading">
+        <p>Loading</p><span></span>
+      </div>
+    </div>
     <header class="header"> 
       <div class="container"> 
         <div class="content__large"> 
@@ -54,8 +59,8 @@
     <main class="main">
       <div class="container"> 
         <div class="content">
-          <div class="workflow" id="workflow"> 
-            <div class="section-title">Как мы работаем? </div>
+          <section class="workflow" id="workflow"> 
+            <h3 class="section-title">Как мы работаем? </h3>
             <div class="steps">
               <div class="step">
                 <div class="text"> 
@@ -105,13 +110,13 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
       <div class="container">   
         <div class="content__large">   
-          <div class="services" id="services"> 
-            <div class="section-title">Наши услуги</div>
+          <section class="services" id="services"> 
+            <h3 class="section-title">Наши услуги</h3>
             <div class="services-list">
               <div class="service"> 
                 <div class="service-half half-img legalization"> </div>
@@ -139,33 +144,33 @@
                       <div class="subtitle">Харьков и Харьковская область</div>
                     </div>
                     <div class="description"> 
-                      <div class="description-bullet">Приватизация земли под жилые дома</div>
-                      <div class="description-bullet">Приватизация садового участка</div>
-                      <div class="description-text">Передача частным лицам в частную собственность земельных участков из государственной или коммунальной собственности.</div>
+                      <div class="bullet">Приватизация земли под жилые дома</div>
+                      <div class="bullet">Приватизация садового участка</div>
+                      <div class="text">Передача частным лицам в частную собственность земельных участков из государственной или коммунальной собственности.</div>
                     </div>
                     <div class="footnote">
-                      <div class="footnote-title">Приватизация земли под жилые дома</div>
-                      <div class="footnote-price">от 15 000 грн.</div>
+                      <div class="title">Приватизация земли под жилые дома</div>
+                      <div class="price">от 15 000 грн.</div>
                     </div>
                     <div class="footnote">
-                      <div class="footnote-title">Приватизация садового участка</div>
-                      <div class="footnote-price">от 8 000 грн.</div>
+                      <div class="title">Приватизация садового участка</div>
+                      <div class="price">от 8 000 грн.</div>
                     </div>
                     <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
                     <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
                   </div>
                 </div>
                 <div class="service-half privatization-img"> 
-                  <div class="documents-needed-wrapper"> 
+                  <div class="documents-wrapper"> 
                     <div class="documents-needed">
-                      <div class="documents-title">Пакет Документов</div>
-                      <div class="documents-subtitle">Для приватизации земли под жилой дом</div>
-                      <ul class="documents-list">
-                        <div class="document">Паспорт и идентификационный код владельца (владельцев)</div>
-                        <div class="document">Технический паспорт на дом</div>
-                        <div class="document">Правоустанавливающий(ие) документ(ы) на домовладение (договор купли-продажи, дарственная, свидетельство о наследстве, госакт, решение суда и т.д.), заверенный(е) нотариально</div>
-                        <div class="document">Вытяг из Государственного реестра имущественных прав на недвижимое имущество (нотариальная копия)</div>
-                        <div class="document">Оригинал решения о переименовании улицы (если было переименование)</div>
+                      <div class="title">Пакет Документов</div>
+                      <div class="subtitle">Для приватизации земли под жилой дом</div>
+                      <ul class="list">
+                        <li class="document">Паспорт и идентификационный код владельца (владельцев)</li>
+                        <li class="document">Технический паспорт на дом</li>
+                        <li class="document">Правоустанавливающий(ие) документ(ы) на домовладение (договор купли-продажи, дарственная, свидетельство о наследстве, госакт, решение суда и т.д.), заверенный(е) нотариально</li>
+                        <li class="document">Вытяг из Государственного реестра имущественных прав на недвижимое имущество (нотариальная копия)</li>
+                        <li class="document">Оригинал решения о переименовании улицы (если было переименование)</li>
                       </ul>
                       <div class="documents-footer">
                         <div class="documents-footer-text">Для приватизации земли под жилой дом</div>
@@ -180,10 +185,10 @@
                   <div class="service-info">
                     <div class="title">Геодезические Работы</div>
                     <div class="description"> 
-                      <div class="description-text">Определение границ земельного участка на местности. Топографическая и геодезическая съемка земельных участков.</div>
+                      <div class="text">Определение границ земельного участка на местности. Топографическая и геодезическая съемка земельных участков.</div>
                     </div>
                     <div class="footnote"> 
-                      <div class="footnote-price">от 7 000 грн.</div>
+                      <div class="price">от 7 000 грн.</div>
                     </div>
                     <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
                     <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
@@ -195,16 +200,16 @@
                   <div class="service-info">
                     <div class="title">Кадастровый номер и Технический Паспорт</div>
                     <div class="description"> 
-                      <div class="description-text">Внесение сведений в Государственный земельный кадастр о Вашем земельном участке. Присвоение кадастровых номеров земельным участкам, в том числе объединение и разделение земельных участков.</div>
-                      <div class="description-text">Техническая инвентаризация объектов недвижимости. Изготовление технических паспортов на все виды недвижимости (в том числе на недостроенные объекты).</div>
+                      <div class="text">Внесение сведений в Государственный земельный кадастр о Вашем земельном участке. Присвоение кадастровых номеров земельным участкам, в том числе объединение и разделение земельных участков.</div>
+                      <div class="text">Техническая инвентаризация объектов недвижимости. Изготовление технических паспортов на все виды недвижимости (в том числе на недостроенные объекты).</div>
                     </div>
                     <div class="footnote">
-                      <div class="footnote-title">Кадастровый номер</div>
-                      <div class="footnote-price">от 15 000 грн.</div>
+                      <div class="title">Кадастровый номер</div>
+                      <div class="price">от 15 000 грн.</div>
                     </div>
                     <div class="footnote">
-                      <div class="footnote-title">Цена технического паспорта зависит от количества кв.М</div>
-                      <div class="footnote-price">от 8 000 грн.</div>
+                      <div class="title">Цена технического паспорта зависит от количества кв.М</div>
+                      <div class="price">от 8 000 грн.</div>
                     </div>
                     <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
                     <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
@@ -213,13 +218,13 @@
                 <div class="service-half half-img kadastr-img"> </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
-      <div class="why-us" id="why-us"> 
+      <section class="why-us" id="why-us"> 
         <div class="container"> 
           <div class="content"> 
-            <div class="section-title">Почему мы?</div>
+            <h3 class="section-title">Почему мы?</h3>
             <div class="advantages-wrapper">
               <div class="advantages-title">Наши преимущества</div>
               <div class="advantages-list"> 
@@ -283,20 +288,22 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="about-us">
+      </section>
+      <section class="about-us">
         <div class="container"> 
           <div class="content__large"> 
-            <div class="section-title">О нас</div>
-            <div class="text">Протекание всех процессов связанных с юриспруденцией всегда тесно переплетены с простой человеческой жизнью, а потому задача адвоката состоит не только в высококвалифицированной обработке и подготовке необходимой документации, для достижения конечного желаемого результата но и прежде всего в заботе о эмоциональном состоянии клиента. Расположение клиента, наличие доверительных отношений  является важной составляющей благоприятного и безболезненного протекания сложнейших юридических операций. Также как  и в медицинской сфере, юридические операции протекают под надзором целой команды высококлассных специалистов, контролирующих мельчайшие процессы, иногда непонятных, но таких важных и необходимых. Девизом нашей компании всегда есть и будет изречение Гиппократа: <b>Болезнь легче предупредить чем вылечить. А потому во главу угла всегда ставятся желания клиента.</b></div>
-            <div class="subtext">Юридическая компания "Ищенко и Партнеры" - Залог вашего спокойствия и благополучия.</div>
+            <h3 class="section-title">О нас</h3>
+            <div class="text">
+              <div class="main">Протекание всех процессов связанных с юриспруденцией всегда тесно переплетены с простой человеческой жизнью, а потому задача адвоката состоит не только в высококвалифицированной обработке и подготовке необходимой документации, для достижения конечного желаемого результата но и прежде всего в заботе о эмоциональном состоянии клиента. Расположение клиента, наличие доверительных отношений  является важной составляющей благоприятного и безболезненного протекания сложнейших юридических операций. Также как  и в медицинской сфере, юридические операции протекают под надзором целой команды высококлассных специалистов, контролирующих мельчайшие процессы, иногда непонятных, но таких важных и необходимых. Девизом нашей компании всегда есть и будет изречение Гиппократа: <b>Болезнь легче предупредить чем вылечить. А потому во главу угла всегда ставятся желания клиента.</b></div>
+              <div class="subtext">Юридическая компания "Ищенко и Партнеры" - Залог вашего спокойствия и благополучия.</div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="faq-section" id="faq"> 
+      </section>
+      <section class="faq-section" id="faq"> 
         <div class="container"> 
           <div class="content__large"> 
-            <div class="section-title">FAQ </div>
+            <h3 class="section-title">FAQ </h3>
             <div class="section-subtitle">Часто задаваемые вопросы</div>
             <div class="faq-wrapper">
               <div class="faq-list">
@@ -324,11 +331,11 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="form-section"> 
+      </section>
+      <section class="form-section"> 
         <div class="container"> 
           <div class="content"> 
-            <div class="section-title">У вас остались вопросы ? </div>
+            <h3 class="section-title">У вас остались вопросы ? </h3>
             <div class="section-subtitle">Если вы не нашли ответ на ваш вопрос - заполните форму ниже, и наш сотрудник перезвонит вам в ближайшее время, для выяснения всех обстоятельств и тчательной проработки конкретно вашей ситуации</div>
             <form class="form" id="form" action="">
               <div class="form-inputs">
@@ -349,7 +356,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="gotop"></div>
     </main>
     <footer class="footer" id="footer">
@@ -372,7 +379,6 @@
       </div>
       <div class="footer-copyright">developed by "AserCo"</div>
     </footer>
+    <script src="script/script.js"></script>
   </body>
-  <script src="script/script.js"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap&amp;libraries=&amp;v=weekly" async> </script>
 </html>
