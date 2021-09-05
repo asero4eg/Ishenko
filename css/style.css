@@ -388,6 +388,14 @@ a {
   font-style: normal;
   font-display: block;
 }
+@font-face {
+  font-family: "Heuristica";
+  src: url("../fonts/Heuristica-Regular.otf");
+}
+@font-face {
+  font-family: "Heuristica Bold", sans-serif;
+  src: url("../fonts/Heuristica-Bold.otf");
+}
 [class^=icon-],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -471,6 +479,7 @@ body {
 }
 
 * {
+  font-family: "Heuristica", sans-serif;
   box-sizing: border-box;
 }
 
