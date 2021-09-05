@@ -418,7 +418,7 @@ a {
 .section-subtitle {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .header {
@@ -1004,6 +1004,8 @@ a {
   background-size: cover;
   background-position: center;
   padding: 100px 0;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .faq-list {
@@ -1012,7 +1014,7 @@ a {
 }
 
 .faq-item {
-  background-color: #2F3033;
+  background-color: #2f3033;
   color: white;
   padding: 10px;
   margin-bottom: 10px;
@@ -1047,8 +1049,115 @@ a {
 
 .faq-text {
   display: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   border-top: 2px dashed white;
   padding: 20px 0 10px 0;
+}
+
+.form {
+  padding: 30px 0 75px 0;
+  margin-bottom: 30px;
+  border-bottom: 2px dashed #B4B4B4;
+}
+
+.form-inputs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.form-inputs input {
+  padding: 14px 0 14px 30px;
+  width: 45%;
+  font-size: 1.8rem;
+  border: none;
+  border-bottom: 3px solid #F1F1F1;
+  background-color: #F1F1F1;
+  transition: background-color 0.2s ease, border-bottom 0.2s ease, padding 0.2s ease;
+}
+.form-inputs input:focus {
+  outline: none;
+  background-color: #fff;
+  padding: 12.5px 0 12.5px 30px;
+  border-bottom: 3px solid #ffe427;
+}
+
+.form-btn {
+  display: block;
+  cursor: pointer;
+  width: 536px;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 16px 0;
+  border: none;
+  outline: none;
+  background: #ffed6d;
+  background: radial-gradient(circle, #ffed6d 0%, #ffde58 74%);
+  font-size: 1.8rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+.form-contacts-text {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.form-contacts {
+  margin-bottom: 40px;
+}
+.form-contacts .phone, .form-contacts .email {
+  font-size: 2.3rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+.form-contacts .phone a, .form-contacts .email a {
+  text-decoration: none;
+  color: black;
+}
+.form-contacts .phone {
+  margin-bottom: 10px;
+}
+.form-contacts .phone:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 450px;
+  margin-bottom: 35px;
+}
+
+.footer-nav {
+  max-width: 755px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.footer-nav ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+}
+
+.footer-info {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.company-name {
+  font-weight: bold;
+}
+
+.footer-info-item {
+  margin-bottom: 15px;
+  font-size: 1.4rem;
+}
+
+.footer-copyright {
+  text-align: center;
+  margin-bottom: 10px;
 }

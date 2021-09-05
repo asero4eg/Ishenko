@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap&amp;libraries=&amp;v=weekly" async=""></script>
   </head>
   <body>
     <div class="wrapper">
@@ -275,33 +274,58 @@
             </div>
           </div>
         </div>
-        <div class="faq"> 
+        <div class="faq-section"> 
           <div class="container"> 
             <div class="content"> 
               <div class="section-title">FAQ </div>
               <div class="section-subtitle">Часто задаваемые вопросы</div>
-              <div class="faq-wrapper">
-                <div class="faq-list">
-                  <div class="faq-item"> 
-                    <label class="faq-title" for="faq_1">Какие документы необходимы для узаконения самостроя ?</label>
-                    <input class="faq-input" id="faq_1" type="checkbox" name="faq_1">
-                    <div class="faq-text">Зависят от уже имеющейся документации и общего состояния дел. Для более подробного ответа - обратитесь за консультацией, и мы рассмотрим вашу ситуацию.</div>
-                  </div>
-                  <div class="faq-item"> 
-                    <label class="faq-title" for="faq_2">Какие документы необходимы для узаконения самостроя ?</label>
-                    <input class="faq-input" id="faq_2" type="checkbox" name="faq_2">
-                    <div class="faq-text">Зависят от уже имеющейся документации и общего состояния дел. Для более подробного ответа - обратитесь за консультацией, и мы рассмотрим вашу ситуацию.</div>
-                  </div>
-                  <div class="faq-item"> 
-                    <label class="faq-title" for="faq_3">Какие документы необходимы для узаконения самостроя ?</label>
-                    <input class="faq-input" id="faq_3" type="checkbox" name="faq_3">
-                    <div class="faq-text">Зависят от уже имеющейся документации и общего состояния дел. Для более подробного ответа - обратитесь за консультацией, и мы рассмотрим вашу ситуацию.</div>
-                  </div>
-                  <div class="faq-item"> 
-                    <label class="faq-title" for="faq_4">Какие документы необходимы для узаконения самостроя ?</label>
-                    <input class="faq-input" id="faq_4" type="checkbox" name="faq_3">
-                    <div class="faq-text">Зависят от уже имеющейся документации и общего состояния дел. Для более подробного ответа - обратитесь за консультацией, и мы рассмотрим вашу ситуацию.</div>
-                  </div>
+            </div>
+          </div>
+          <div class="faq-wrapper">
+            <div class="faq-list">
+              <div class="faq-item"> 
+                <label class="faq-title" for="faq_1">Какие документы необходимы для узаконения самостроя ?</label>
+                <input class="faq-input" id="faq_1" type="checkbox" name="faq_1">
+                <div class="faq-text">Зависят от уже имеющейся документации и общего состояния дел. Для более подробного ответа - обратитесь за консультацией, и мы рассмотрим вашу ситуацию.</div>
+              </div>
+              <div class="faq-item"> 
+                <label class="faq-title" for="faq_2">Какие документы необходимы для узаконения самостроя ?</label>
+                <input class="faq-input" id="faq_2" type="checkbox" name="faq_2">
+                <div class="faq-text">Зависят от уже имеющейся документации и общего состояния дел. Для более подробного ответа - обратитесь за консультацией, и мы рассмотрим вашу ситуацию.</div>
+              </div>
+              <div class="faq-item"> 
+                <label class="faq-title" for="faq_3">Какие документы необходимы для узаконения самостроя ?</label>
+                <input class="faq-input" id="faq_3" type="checkbox" name="faq_3">
+                <div class="faq-text">Зависят от уже имеющейся документации и общего состояния дел. Для более подробного ответа - обратитесь за консультацией, и мы рассмотрим вашу ситуацию.</div>
+              </div>
+              <div class="faq-item"> 
+                <label class="faq-title" for="faq_4">Какие документы необходимы для узаконения самостроя ?</label>
+                <input class="faq-input" id="faq_4" type="checkbox" name="faq_3">
+                <div class="faq-text">Зависят от уже имеющейся документации и общего состояния дел. Для более подробного ответа - обратитесь за консультацией, и мы рассмотрим вашу ситуацию.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-section"> 
+          <div class="container"> 
+            <div class="content"> 
+              <div class="section-title">У вас остались вопросы ? </div>
+              <div class="section-subtitle">Если вы не нашли ответ на ваш вопрос - заполните форму ниже, и наш сотрудник перезвонит вам в ближайшее время, для выяснения всех обстоятельств и тчательной проработки конкретно вашей ситуации</div>
+              <form class="form" id="form" action="">
+                <div class="form-inputs">
+                  <input type="text" placeholder="Ваше имя" required>
+                  <input type="text" placeholder="Ваша фамилия" required>
+                  <input type="email" placeholder="Ваш email" required>
+                  <input type="tel" placeholder="Ваш телефон" required>
+                </div>
+                <button class="form-btn" type="submit"><span>Оформить консультацию</span></button>
+              </form>
+              <div class="form-contacts"> 
+                <div class="form-contacts-text">Так же, вы можете связаться с нами самостоятельно</div>
+                <div class="form-contacts"> 
+                  <div class="phone"> <a href="tel:+">+380 95 24 00 688</a></div>
+                  <div class="phone"> <a href="tel:+">+380 50 36 41 870</a></div>
+                  <div class="email"> <a href="mailto:">u.samostroj@gmail.com</a></div>
                 </div>
               </div>
             </div>
@@ -309,8 +333,26 @@
         </div>
       </main>
       <footer class="footer">
-        <div id="map"></div>
+        <div class="footer-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d164153.5222970856!2d36.145742038497254!3d49.99450702572823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a09f63ab0f8b%3A0x2d4c18681aa4be0a!2z0KXQsNGA0YzQutC-0LIsINCl0LDRgNGM0LrQvtCy0YHQutCw0Y8g0L7QsdC70LDRgdGC0Yw!5e0!3m2!1sru!2sua!4v1625996461497!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="footer-nav"> 
+          <ul>
+            <li>Как мы работаем ?</li>
+            <li>Услуги</li>
+            <li>Преимущества</li>
+            <li>Вопросы</li>
+            <li>Контакты</li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <div class="footer-info-item company-name">Юридическая Компания "Ищенко и Партнеры"</div>
+          <div class="footer-info-item">61068, г. Харьков</div>
+          <div class="footer-info-item">проспект Московский 46-А, офис 123</div>
+          <div class="footer-info-item">e-mail: testemail_for_design@gmail.com</div>
+          <div class="footer-info-item">тел.: +380 55 6666 66 66</div>
+        </div>
+        <div class="footer-copyright">developed by "AserCo"</div>
       </footer>
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&amp;callback=initMap&amp;libraries=&amp;v=weekly" async> </script>
   </body>
 </html>
