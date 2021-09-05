@@ -357,6 +357,112 @@ a {
   text-decoration: none;
 }
 
+@-webkit-keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@font-face {
+  font-family: "icomoon";
+  src: url("../fonts/icomoon.eot?bzstkn");
+  src: url("../fonts/icomoon.eot?bzstkn#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?bzstkn") format("truetype"), url("../fonts/icomoon.woff?bzstkn") format("woff"), url("../fonts/icomoon.svg?bzstkn#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon {
+  font-size: 3.6rem;
+  text-align: center;
+  height: 100%;
+}
+
+.icon-arrow:before {
+  content: "";
+}
+
+.icon-dropdown_arrow:before {
+  content: "";
+}
+
+.icon-financial_responsibility:before {
+  content: "";
+  vertical-align: middle;
+}
+
+.icon-guarantee:before {
+  content: "";
+  vertical-align: sub;
+}
+
+.icon-on_connection:before {
+  content: "";
+  vertical-align: sub;
+}
+
+.icon-phone_call:before {
+  content: "";
+  font-size: 4.5rem;
+  color: white;
+}
+
+.icon-prices:before {
+  content: "";
+  vertical-align: sub;
+}
+
+.icon-profitable_terms:before {
+  content: "";
+  vertical-align: sub;
+}
+
+.icon-quality:before {
+  content: "";
+  vertical-align: sub;
+}
+
+.icon-speed:before {
+  content: "";
+  vertical-align: middle;
+}
+
+.icon-top-secret:before {
+  content: "";
+  vertical-align: sub;
+}
+
 html,
 body {
   padding: 0;
@@ -391,6 +497,12 @@ a {
   z-index: 1000;
 }
 
+.content__large {
+  width: 100%;
+  max-width: 1920px;
+  z-index: 1000;
+}
+
 .section-title {
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -421,9 +533,13 @@ a {
   font-size: 2rem;
 }
 
+.nav-links li a {
+  text-decoration: none;
+}
+
 .header {
   position: relative;
-  background-image: url("../img/header.jpg");
+  background-image: url("../img/background/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -438,14 +554,16 @@ a {
   opacity: 0.85;
 }
 
-.header-contacts {
+.header .contacts {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 60px;
+  padding: 0 15px;
 }
 
-.contacts-left, .contacts-right {
+.contacts-left,
+.contacts-right {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -478,11 +596,11 @@ a {
 .logo-text {
   color: #ffe427;
 }
-.logo-text .top-text {
+.logo-text .small {
   font-size: 1.7rem;
   margin-top: 25px;
 }
-.logo-text .bottom-text {
+.logo-text .regular {
   margin-top: 10px;
   font-size: 2.5rem;
   font-weight: bold;
@@ -498,7 +616,7 @@ a {
   margin-bottom: 0;
 }
 
-.main-text {
+.header .title {
   position: relative;
   font-size: 13rem;
   text-align: center;
@@ -506,7 +624,7 @@ a {
   margin: 55px 0 85px 0;
   z-index: 1000;
 }
-.main-text::after {
+.header .title::after {
   content: "Узаконим самострой";
   position: absolute;
   top: -25px;
@@ -519,19 +637,19 @@ a {
   -webkit-text-stroke-color: white;
 }
 
-.secondary-text {
+.header .about {
   text-align: center;
   color: white;
   font-size: 2.2rem;
   margin-bottom: 125px;
 }
-.secondary-text .text {
+.header .about .text {
   display: block;
 }
-.secondary-text .text:first-child {
+.header .about .text:first-child {
   margin-bottom: 30px;
 }
-.secondary-text .yellow {
+.header .about .yellow {
   color: #ffe427;
   font-weight: 900;
 }
@@ -550,6 +668,7 @@ a {
   text-align: center;
 }
 .header .button-wrapper .button {
+  display: block;
   width: 100%;
   max-width: 800px;
   margin-top: 35px;
@@ -559,6 +678,8 @@ a {
   font-size: 2.1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  text-decoration: none;
+  color: black;
 }
 
 .header-nav {
@@ -573,14 +694,27 @@ a {
   margin-bottom: 60px;
   list-style: none;
 }
-.header-nav ul li {
+.header-nav ul li a {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   color: white;
 }
-.header-nav ul li:hover {
+.header-nav ul li a:hover {
   cursor: pointer;
   color: #ffe427;
+}
+
+.about-us .text {
+  font-size: 1.9rem;
+  text-align: center;
+  line-height: 3rem;
+  padding: 0 25px;
+  margin-bottom: 40px;
+}
+.about-us .subtext {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.3rem;
 }
 
 .steps {
@@ -588,29 +722,28 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 90px;
-  border-bottom: 2px dashed #1C1D23;
+  border-bottom: 2px dashed #1c1d23;
   gap: 50px;
 }
-
-.step {
+.steps .step {
   position: relative;
   max-width: 47%;
   padding: 45px 37px;
   box-shadow: 0px 3px 11px -3px rgba(112, 112, 112, 0.2);
 }
-.step .text {
+.steps .step .text {
   position: relative;
   z-index: 100;
 }
-.step .title {
+.steps .step .title {
   font-size: 4.8rem;
   font-weight: bold;
   margin-bottom: 45px;
 }
-.step .description {
+.steps .step .description {
   font-size: 1.8rem;
 }
-.step .number {
+.steps .step .number {
   position: absolute;
   right: 2%;
   top: 0;
@@ -620,7 +753,7 @@ a {
   color: #F3F3F3;
   z-index: 0;
 }
-.step:last-child .number {
+.steps .step:last-child .number {
   color: #ffee6daa;
 }
 
@@ -638,14 +771,16 @@ a {
 }
 .contact-us .button-wrapper .text {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: black;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 .contact-us .button-wrapper .button {
+  display: block;
+  color: black;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   padding: 25px 0;
   background: #ffed6d;
   background: radial-gradient(circle, #ffed6d 0%, #ffde58 74%);
@@ -654,13 +789,8 @@ a {
   font-weight: 500;
 }
 
-.vertical-dashes_short {
-  content: url("../img/Line 79.svg");
-  margin: 0 auto;
-}
-
-.vertical-dashes_long {
-  content: url("../img/Line 80.svg");
+.vertical-dashes {
+  content: url("../img/vertical_dashes.svg");
   margin: 0 auto;
 }
 
@@ -669,19 +799,19 @@ a {
 }
 .phone-call-wrapper .phone-call-text {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   text-align: center;
   padding: 30px 0;
 }
 
 .phone-call {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-top: 30px;
 }
 .phone-call .number {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
 }
@@ -694,6 +824,8 @@ a {
   height: 138px;
   border: 3px solid #ffe427;
   border-radius: 50%;
+  -webkit-animation: pulse 1.3s infinite;
+          animation: pulse 1.3s infinite;
 }
 
 .phone-icon-fill {
@@ -702,6 +834,11 @@ a {
   border-radius: 50%;
   background: #ffce85;
   background: linear-gradient(234deg, #ffce85 0%, #ffed6d 74%);
+}
+
+.icon-phone_call {
+  margin-top: 50%;
+  transform: translateY(-50%);
 }
 
 .services {
@@ -809,7 +946,9 @@ a {
   margin-bottom: 30px;
 }
 .services .button-wrapper .button {
+  display: block;
   text-align: center;
+  color: black;
   width: 100%;
   max-width: 800px;
   margin-top: 35px;
@@ -825,7 +964,7 @@ a {
 }
 
 .legalization {
-  background-image: url("../img/legalization.jpg");
+  background-image: url("../img/background/legalization.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -837,7 +976,7 @@ a {
 
 .privatization-img {
   position: relative;
-  background-image: url("../img/privatization.jpg");
+  background-image: url("../img/background/privatization.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -912,14 +1051,14 @@ a {
   background-color: #fff9ce;
 }
 .documents-footer::before {
-  content: url("../img/Path 2830.svg");
+  content: url("../img/icons/arrow.svg");
   display: block;
   margin: 0 auto;
   transform: rotate(-90deg);
 }
 
 .geodezic-img {
-  background-image: url("../img/geodezic.jpg");
+  background-image: url("..//img/background/geodezic.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -940,7 +1079,7 @@ a {
 }
 
 .kadastr-img {
-  background-image: url("../img/kadastr.jpg");
+  background-image: url("../img/background/kadastr.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -964,7 +1103,7 @@ a {
   padding: 19px 40px 60px;
   box-shadow: 0px 3px 11px -3px rgba(112, 112, 112, 0.2);
 }
-.advantage-icon {
+.advantage .icon-wrapper {
   width: 65.5px;
   height: 65.5px;
   border: 5px solid black;
@@ -972,7 +1111,7 @@ a {
   margin: auto;
   margin-bottom: 10.5px;
 }
-.advantage-title {
+.advantage .title {
   position: relative;
   font-size: 1.9rem;
   font-weight: bold;
@@ -980,7 +1119,7 @@ a {
   padding-bottom: 20px;
   margin-bottom: 20px;
 }
-.advantage-title::after {
+.advantage .title::after {
   content: "";
   display: block;
   position: absolute;
@@ -992,7 +1131,7 @@ a {
   background: linear-gradient(234deg, #ff8944 0%, #ffdf00 74%);
   width: 30%;
 }
-.advantage-text {
+.advantage .text {
   font-family: "Roboto", sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
@@ -1000,7 +1139,7 @@ a {
 }
 
 .faq-wrapper {
-  background-image: url("../img/faq-list-bg.jpg");
+  background-image: url("../img/background/faq-list-bg.jpg");
   background-size: cover;
   background-position: center;
   padding: 100px 0;
@@ -1066,6 +1205,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   gap: 30px;
+  margin-bottom: 50px;
 }
 .form-inputs input {
   padding: 14px 0 14px 30px;
@@ -1088,7 +1228,6 @@ a {
   cursor: pointer;
   width: 536px;
   margin: 0 auto;
-  margin-top: 30px;
   padding: 16px 0;
   border: none;
   outline: none;
@@ -1142,6 +1281,12 @@ a {
   justify-content: space-between;
   font-size: 1.4rem;
 }
+.footer-nav li a {
+  color: black;
+}
+.footer-nav li a:hover {
+  text-decoration: underline;
+}
 
 .footer-info {
   text-align: center;
@@ -1152,7 +1297,7 @@ a {
   font-weight: bold;
 }
 
-.footer-info-item {
+.footer-item {
   margin-bottom: 15px;
   font-size: 1.4rem;
 }
