@@ -27,6 +27,10 @@ btn.on('click', function (e) {
 //Popup documents
 let docLinks = document.querySelectorAll('.documents-link');
 let bg = document.querySelector('.documents-wrapper');
+let legalize = document.querySelector('#legalize-doc');
+let privat = document.querySelector('#privat-doc');
+let geodezic = document.querySelector('#geodezic-doc');
+let kadastr = document.querySelector('#kadastr-doc');
 
 
 for (let i = 0; i < docLinks.length; i++) {
@@ -36,58 +40,57 @@ for (let i = 0; i < docLinks.length; i++) {
 function docLinkShow(e) {
 
   if (e.target.dataset.id === 'legalize') {
-    if (document.querySelector('#legalize-doc').classList.contains('documents-needed-hide')) {
+    if (legalize.classList.contains('documents-needed-hide')) {
       bg.style.display = 'block';
-      document.querySelector('#legalize-doc').classList.remove('documents-needed-hide');
-      document.querySelector('#legalize-doc').classList.add('documents-needed-show');
+      legalize.classList.remove('documents-needed-hide');
+      legalize.classList.add('documents-needed-show');
       console.log('legalize')
     }
     else {
-      document.querySelector('#legalize-doc').classList.add('documents-needed-hide');
-      document.querySelector('#legalize-doc').classList.remove('documents-needed-show');
+      legalize.classList.add('documents-needed-hide');
+      legalize.classList.remove('documents-needed-show');
       bg.style.display = 'none';
       console.log('legalize-hide');
-      console.log(document.querySelector('#legalize-doc').classList)
     }
   }
   if (e.target.dataset.id === 'privat') {
-    if (document.querySelector('#privat-doc').classList.contains('documents-needed-hide')) {
+    if (privat.classList.contains('documents-needed-hide')) {
       bg.style.display = 'block';
-      document.querySelector('#privat-doc').classList.remove('documents-needed-hide');
-      document.querySelector('#privat-doc').classList.add('documents-needed-show');
+      privat.classList.remove('documents-needed-hide');
+      privat.classList.add('documents-needed-show');
       console.log('privat')
     }
     else {
-      document.querySelector('#privat-doc').classList.add('documents-needed-hide');
-      document.querySelector('#privat-doc').classList.remove('documents-needed-show');
+      privat.classList.add('documents-needed-hide');
+      privat.classList.remove('documents-needed-show');
       bg.style.display = 'none';
       console.log('privat-hide')
     }
   }
   if (e.target.dataset.id === 'geodezic') {
-    if (document.querySelector('#geodezic-doc').classList.contains('documents-needed-hide')) {
+    if (geodezic.classList.contains('documents-needed-hide')) {
       bg.style.display = 'block';
-      document.querySelector('#geodezic-doc').classList.remove('documents-needed-hide');
-      document.querySelector('#geodezic-doc').classList.add('documents-needed-show');
+      geodezic.classList.remove('documents-needed-hide');
+      geodezic.classList.add('documents-needed-show');
       console.log('geodezic')
     }
     else {
-      document.querySelector('#geodezic-doc').classList.add('documents-needed-hide');
-      document.querySelector('#geodezic-doc').classList.remove('documents-needed-show');
+      geodezic.classList.add('documents-needed-hide');
+      geodezic.classList.remove('documents-needed-show');
       bg.style.display = 'none';
       console.log('geodezic-hide')
     }
   }
   if (e.target.dataset.id === 'kadastr') {
-    if (document.querySelector('#kadastr-doc').classList.contains('documents-needed-hide')) {
+    if (kadastr.classList.contains('documents-needed-hide')) {
       bg.style.display = 'block';
-      document.querySelector('#kadastr-doc').classList.remove('documents-needed-hide');
-      document.querySelector('#kadastr-doc').classList.add('documents-needed-show');
+      kadastr.classList.remove('documents-needed-hide');
+      kadastr.classList.add('documents-needed-show');
       console.log('kadastr')
     }
     else {
-      document.querySelector('#kadastr-doc').classList.add('documents-needed-hide');
-      document.querySelector('#kadastr-doc').classList.remove('documents-needed-show');
+      kadastr.classList.add('documents-needed-hide');
+      kadastr.classList.remove('documents-needed-show');
       bg.style.display = 'none';
       console.log('kadastr-hide')
     }
