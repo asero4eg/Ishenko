@@ -1547,7 +1547,7 @@ a {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 20px;
   transform: rotateZ(90deg);
   font-family: "icomoon";
@@ -1627,6 +1627,7 @@ a {
   font-weight: bold;
   font-family: "Roboto", sans-serif;
   text-align: center;
+  color: #474A5A;
 }
 
 .form-contacts-text {
