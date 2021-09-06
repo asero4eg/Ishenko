@@ -1359,6 +1359,60 @@ a {
   background-position: center;
 }
 
+.tabs-wrapper {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.tabs-titles {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.tabs-wrapper > input[type=radio] {
+  display: none;
+}
+
+.tabs-wrapper > .tab-content {
+  /* скрыть контент по умолчанию */
+  display: none;
+  padding: 10px 15px;
+}
+
+#tab-btn-1:checked ~ #content-1,
+#tab-btn-2:checked ~ #content-2,
+#tab-btn-3:checked ~ #content-3,
+#tab-btn-4:checked ~ #content-4 {
+  display: block;
+}
+
+#tab-btn-1:checked ~ .tabs-titles #tab-lbl-1,
+#tab-btn-2:checked ~ .tabs-titles #tab-lbl-2,
+#tab-btn-3:checked ~ .tabs-titles #tab-lbl-3,
+#tab-btn-4:checked ~ .tabs-titles #tab-lbl-4 {
+  background-color: #FFF294;
+  border: 2px solid #FFDE58;
+}
+
+.tabs-titles > label {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.9rem;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  border: 2px dashed #DEDEDE;
+  padding: 18px 35px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+
 .advantages-title {
   text-align: center;
   font-size: 4.2rem;

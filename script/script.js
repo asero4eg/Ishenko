@@ -1,7 +1,8 @@
-setTimeout(() => {
-  let element=document.querySelector('.preloader');
-  element.parentNode.removeChild(element);
-}, 2000)
+// setTimeout(() => {
+//   let element=document.querySelector('.preloader');
+//   element.parentNode.removeChild(element);
+// }, 2000)
+
 // Smooth links scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {

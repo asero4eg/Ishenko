@@ -11,11 +11,6 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
   <body>
-    <div class="preloader">
-      <div class="loading">
-        <p>Loading</p><span></span>
-      </div>
-    </div>
     <header class="header"> 
       <div class="container"> 
         <div class="content__large"> 
@@ -118,104 +113,124 @@
           <section class="services" id="services"> 
             <h3 class="section-title">Наши услуги</h3>
             <div class="services-list">
-              <div class="service"> 
-                <div class="service-half half-img legalization"> </div>
-                <div class="service-half half-text">
-                  <div class="service-info">
-                    <div class="title">Узаконение (Легализация) самостроев</div>
-                    <div class="bullets"> 
-                      <div class="bullets-title">Узаконение (легализация) самовольно возведенных построек (самостроя) включает в себя : </div>
-                      <ul class="bullets-list"> 
-                        <li class="bullet">Анализ документов, которые есть в наличии;</li>
-                        <li class="bullet">Представительство в органах государственной власти и местного самоуправления;</li>
-                        <li class="bullet">Регистрация права собственности на самовольное строительство недвижимого имущества.</li>
-                      </ul>
-                      <div class="footnote">Цена зависит от сложности, расположения объекта, площади, наличия необходимых документов и количество этапов процедуры.</div>
-                      <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
-                      <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
-                    </div>
-                  </div>
+              <div class="tabs-wrapper">
+                <input class="tab-btn" id="tab-btn-1" type="radio" name="tab-btn" value="" checked="">
+                <input class="tab-btn" id="tab-btn-2" type="radio" name="tab-btn" value="">
+                <input class="tab-btn" id="tab-btn-3" type="radio" name="tab-btn" value="">
+                <input class="tab-btn" id="tab-btn-4" type="radio" name="tab-btn" value="">
+                <div class="tabs-titles">
+                  <label id="tab-lbl-1" for="tab-btn-1">Узаконение самостроев</label>
+                  <label id="tab-lbl-2" for="tab-btn-2">Приватизация земли</label>
+                  <label id="tab-lbl-3" for="tab-btn-3">Геодезические работы</label>
+                  <label id="tab-lbl-4" for="tab-btn-4">Кадастровый номер и тех паспорт</label>
                 </div>
-              </div>
-              <div class="service"> 
-                <div class="service-half half-text privatization">
-                  <div class="service-info">
-                    <div class="title">Приватизация земли
-                      <div class="subtitle">Харьков и Харьковская область</div>
-                    </div>
-                    <div class="description"> 
-                      <div class="bullet">Приватизация земли под жилые дома</div>
-                      <div class="bullet">Приватизация садового участка</div>
-                      <div class="text">Передача частным лицам в частную собственность земельных участков из государственной или коммунальной собственности.</div>
-                    </div>
-                    <div class="footnote">
-                      <div class="title">Приватизация земли под жилые дома</div>
-                      <div class="price">от 15 000 грн.</div>
-                    </div>
-                    <div class="footnote">
-                      <div class="title">Приватизация садового участка</div>
-                      <div class="price">от 8 000 грн.</div>
-                    </div>
-                    <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
-                    <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
-                  </div>
-                </div>
-                <div class="service-half privatization-img"> 
-                  <div class="documents-wrapper"> 
-                    <div class="documents-needed">
-                      <div class="title">Пакет Документов</div>
-                      <div class="subtitle">Для приватизации земли под жилой дом</div>
-                      <ul class="list">
-                        <li class="document">Паспорт и идентификационный код владельца (владельцев)</li>
-                        <li class="document">Технический паспорт на дом</li>
-                        <li class="document">Правоустанавливающий(ие) документ(ы) на домовладение (договор купли-продажи, дарственная, свидетельство о наследстве, госакт, решение суда и т.д.), заверенный(е) нотариально</li>
-                        <li class="document">Вытяг из Государственного реестра имущественных прав на недвижимое имущество (нотариальная копия)</li>
-                        <li class="document">Оригинал решения о переименовании улицы (если было переименование)</li>
-                      </ul>
-                      <div class="documents-footer">
-                        <div class="documents-footer-text">Для приватизации земли под жилой дом</div>
+                <div class="tab-content" id="content-1">
+                  <div class="service"> 
+                    <div class="service-half half-img legalization"> </div>
+                    <div class="service-half half-text">
+                      <div class="service-info">
+                        <div class="title">Узаконение (Легализация) самостроев</div>
+                        <div class="bullets"> 
+                          <div class="bullets-title">Узаконение (легализация) самовольно возведенных построек (самостроя) включает в себя : </div>
+                          <ul class="bullets-list"> 
+                            <li class="bullet">Анализ документов, которые есть в наличии;</li>
+                            <li class="bullet">Представительство в органах государственной власти и местного самоуправления;</li>
+                            <li class="bullet">Регистрация права собственности на самовольное строительство недвижимого имущества.</li>
+                          </ul>
+                          <div class="footnote">Цена зависит от сложности, расположения объекта, площади, наличия необходимых документов и количество этапов процедуры.</div>
+                          <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
+                          <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="service"> 
-                <div class="service-half half-img geodezic-img"> </div>
-                <div class="service-half half-text geodezic">
-                  <div class="service-info">
-                    <div class="title">Геодезические Работы</div>
-                    <div class="description"> 
-                      <div class="text">Определение границ земельного участка на местности. Топографическая и геодезическая съемка земельных участков.</div>
+                <div class="tab-content" id="content-2">
+                  <div class="service"> 
+                    <div class="service-half half-text privatization">
+                      <div class="service-info">
+                        <div class="title">Приватизация земли
+                          <div class="subtitle">Харьков и Харьковская область</div>
+                        </div>
+                        <div class="description"> 
+                          <div class="bullet">Приватизация земли под жилые дома</div>
+                          <div class="bullet">Приватизация садового участка</div>
+                          <div class="text">Передача частным лицам в частную собственность земельных участков из государственной или коммунальной собственности.</div>
+                        </div>
+                        <div class="footnote">
+                          <div class="title">Приватизация земли под жилые дома</div>
+                          <div class="price">от 15 000 грн.</div>
+                        </div>
+                        <div class="footnote">
+                          <div class="title">Приватизация садового участка</div>
+                          <div class="price">от 8 000 грн.</div>
+                        </div>
+                        <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
+                        <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
+                      </div>
                     </div>
-                    <div class="footnote"> 
-                      <div class="price">от 7 000 грн.</div>
+                    <div class="service-half privatization-img"> 
+                      <div class="documents-wrapper"> 
+                        <div class="documents-needed">
+                          <div class="title">Пакет Документов</div>
+                          <div class="subtitle">Для приватизации земли под жилой дом</div>
+                          <ul class="list">
+                            <li class="document">Паспорт и идентификационный код владельца (владельцев)</li>
+                            <li class="document">Технический паспорт на дом</li>
+                            <li class="document">Правоустанавливающий(ие) документ(ы) на домовладение (договор купли-продажи, дарственная, свидетельство о наследстве, госакт, решение суда и т.д.), заверенный(е) нотариально</li>
+                            <li class="document">Вытяг из Государственного реестра имущественных прав на недвижимое имущество (нотариальная копия)</li>
+                            <li class="document">Оригинал решения о переименовании улицы (если было переименование)</li>
+                          </ul>
+                          <div class="documents-footer">
+                            <div class="documents-footer-text">Для приватизации земли под жилой дом</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
-                    <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
                   </div>
                 </div>
-              </div>
-              <div class="service">
-                <div class="service-half half-text kadastr">
-                  <div class="service-info">
-                    <div class="title">Кадастровый номер и Технический Паспорт</div>
-                    <div class="description"> 
-                      <div class="text">Внесение сведений в Государственный земельный кадастр о Вашем земельном участке. Присвоение кадастровых номеров земельным участкам, в том числе объединение и разделение земельных участков.</div>
-                      <div class="text">Техническая инвентаризация объектов недвижимости. Изготовление технических паспортов на все виды недвижимости (в том числе на недостроенные объекты).</div>
+                <div class="tab-content" id="content-3">
+                  <div class="service"> 
+                    <div class="service-half half-img geodezic-img"> </div>
+                    <div class="service-half half-text geodezic">
+                      <div class="service-info">
+                        <div class="title">Геодезические Работы</div>
+                        <div class="description"> 
+                          <div class="text">Определение границ земельного участка на местности. Топографическая и геодезическая съемка земельных участков.</div>
+                        </div>
+                        <div class="footnote"> 
+                          <div class="price">от 7 000 грн.</div>
+                        </div>
+                        <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
+                        <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
+                      </div>
                     </div>
-                    <div class="footnote">
-                      <div class="title">Кадастровый номер</div>
-                      <div class="price">от 15 000 грн.</div>
-                    </div>
-                    <div class="footnote">
-                      <div class="title">Цена технического паспорта зависит от количества кв.М</div>
-                      <div class="price">от 8 000 грн.</div>
-                    </div>
-                    <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
-                    <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
                   </div>
                 </div>
-                <div class="service-half half-img kadastr-img"> </div>
+                <div class="tab-content" id="content-4">
+                  <div class="service">
+                    <div class="service-half half-text kadastr">
+                      <div class="service-info">
+                        <div class="title">Кадастровый номер и Технический Паспорт</div>
+                        <div class="description"> 
+                          <div class="text">Внесение сведений в Государственный земельный кадастр о Вашем земельном участке. Присвоение кадастровых номеров земельным участкам, в том числе объединение и разделение земельных участков.</div>
+                          <div class="text">Техническая инвентаризация объектов недвижимости. Изготовление технических паспортов на все виды недвижимости (в том числе на недостроенные объекты).</div>
+                        </div>
+                        <div class="footnote">
+                          <div class="title">Кадастровый номер</div>
+                          <div class="price">от 15 000 грн.</div>
+                        </div>
+                        <div class="footnote">
+                          <div class="title">Цена технического паспорта зависит от количества кв.М</div>
+                          <div class="price">от 8 000 грн.</div>
+                        </div>
+                        <div class="documents-link"> <a href="#">Какие документы необходимы</a></div>
+                        <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
+                      </div>
+                    </div>
+                    <div class="service-half half-img kadastr-img"> </div>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
