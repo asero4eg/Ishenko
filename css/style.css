@@ -1119,6 +1119,7 @@ a {
   height: 138px;
   border: 3px solid #ffe427;
   border-radius: 50%;
+  box-shadow: 0px 0px 15px -3px rgba(34, 60, 80, 0.2);
   -webkit-animation: pulse 1.3s infinite;
           animation: pulse 1.3s infinite;
 }
@@ -1129,6 +1130,7 @@ a {
   border-radius: 50%;
   background: #ffce85;
   background: linear-gradient(234deg, #ffce85 0%, #ffed6d 74%);
+  box-shadow: 0px 0px 15px -3px rgba(34, 60, 80, 0.2);
 }
 
 .icon-phone_call {
@@ -1455,7 +1457,7 @@ a {
   text-align: center;
   font-size: 4.2rem;
   margin-bottom: 30px;
-  color: #1C1D23;
+  color: #1c1d23;
 }
 
 .advantages-list {
@@ -1476,7 +1478,7 @@ a {
 .advantage .icon-wrapper {
   width: 65.5px;
   height: 65.5px;
-  border: 5px solid #1C1D23;
+  border: 5px solid #1c1d23;
   border-radius: 50%;
   margin: auto;
   margin-bottom: 10.5px;
@@ -1488,7 +1490,7 @@ a {
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  color: #1C1D23;
+  color: #1c1d23;
 }
 .advantage .title::after {
   content: "";
@@ -1508,7 +1510,7 @@ a {
   font-weight: 400;
   line-height: 2rem;
   text-align: center;
-  color: #1C1D23;
+  color: #1c1d23;
 }
 
 .faq-wrapper {
