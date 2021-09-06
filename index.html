@@ -119,10 +119,10 @@
             <h3 class="section-title">Наши услуги</h3>
             <div class="services-list">
               <div class="tabs-wrapper">
-                <input class="tab-btn" id="tab-btn-1" type="radio" name="tab-btn" value="" checked="">
-                <input class="tab-btn" id="tab-btn-2" type="radio" name="tab-btn" value="">
-                <input class="tab-btn" id="tab-btn-3" type="radio" name="tab-btn" value="">
-                <input class="tab-btn" id="tab-btn-4" type="radio" name="tab-btn" value="">
+                <input class="tab-btn" id="tab-btn-1" type="radio" name="tab-btn" value="legalize" checked="">
+                <input class="tab-btn" id="tab-btn-2" type="radio" name="tab-btn" value="privat">
+                <input class="tab-btn" id="tab-btn-3" type="radio" name="tab-btn" value="geodezic">
+                <input class="tab-btn" id="tab-btn-4" type="radio" name="tab-btn" value="kadastr">
                 <div class="tabs-titles">
                   <label class="tab-lbl" id="tab-lbl-1" for="tab-btn-1">Узаконение самостроев</label>
                   <label class="tab-lbl" id="tab-lbl-2" for="tab-btn-2">Приватизация земли</label>
@@ -143,7 +143,8 @@
                             <li class="bullet"> <b>Регистрация права </b>собственности на самовольное <b>строительство</b>недвижимого имущества.</li>
                           </ul>
                           <div class="footnote">Цена зависит от сложности, расположения объекта, площади, наличия необходимых документов и количество этапов процедуры.</div>
-                          <div class="documents-link"> <span>Какие документы необходимы</span></div>
+                          <div class="documents-link" data-id="legalize">
+                             Какие документы необходимы</div>
                           <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
                         </div>
                       </div>
@@ -170,28 +171,12 @@
                           <div class="title">Приватизация садового участка</div>
                           <div class="price">от 8 000 грн.</div>
                         </div>
-                        <div class="documents-link"> <span>Какие документы необходимы</span></div>
+                        <div class="documents-link" data-id="privat">
+                           Какие документы необходимы</div>
                         <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
                       </div>
                     </div>
-                    <div class="service-half privatization-img"> 
-                      <div class="documents-wrapper"> 
-                        <div class="documents-needed">
-                          <div class="title">Пакет Документов</div>
-                          <div class="subtitle">Для приватизации земли под жилой дом</div>
-                          <ul class="list">
-                            <li class="document">Паспорт и идентификационный код владельца (владельцев)</li>
-                            <li class="document">Технический паспорт на дом</li>
-                            <li class="document">Правоустанавливающий(ие) документ(ы) на домовладение (договор купли-продажи, дарственная, свидетельство о наследстве, госакт, решение суда и т.д.), заверенный(е) нотариально</li>
-                            <li class="document">Вытяг из Государственного реестра имущественных прав на недвижимое имущество (нотариальная копия)</li>
-                            <li class="document">Оригинал решения о переименовании улицы (если было переименование)</li>
-                          </ul>
-                          <div class="documents-footer">
-                            <div class="documents-footer-text">Для приватизации земли под жилой дом</div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                    <div class="service-half privatization-img"> </div>
                   </div>
                 </div>
                 <div class="tab-content" id="content-3">
@@ -206,7 +191,8 @@
                         <div class="footnote"> 
                           <div class="price">от 7 000 грн.</div>
                         </div>
-                        <div class="documents-link"> <span>Какие документы необходимы</span></div>
+                        <div class="documents-link" data-id="geodezic">
+                           Какие документы необходимы</div>
                         <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
                       </div>
                     </div>
@@ -229,7 +215,8 @@
                           <div class="title">Цена технического паспорта зависит от количества кв.М</div>
                           <div class="price">от 8 000 грн.</div>
                         </div>
-                        <div class="documents-link"> <span>Какие документы необходимы</span></div>
+                        <div class="documents-link" data-id="kadastr">
+                           Какие документы необходимы</div>
                         <div class="button-wrapper"> <a class="button" href="#form">Оформить консультацию</a></div>
                       </div>
                     </div>
@@ -377,6 +364,64 @@
           </div>
         </div>
       </section>
+      <div class="documents-wrapper">
+        <div class="documents-needed documents-needed-hide" id="legalize-doc">
+          <div class="title">Пакет Документов</div>
+          <div class="subtitle">Для приватизации земли под жилой дом</div>
+          <ul class="list">
+            <li class="document">Паспорт и идентификационный код владельца (владельцев)</li>
+            <li class="document">Технический паспорт на дом</li>
+            <li class="document">Правоустанавливающий(ие) документ(ы) на домовладение (договор купли-продажи, дарственная, свидетельство о наследстве, госакт, решение суда и т.д.), заверенный(е) нотариально</li>
+            <li class="document">Вытяг из Государственного реестра имущественных прав на недвижимое имущество (нотариальная копия)</li>
+            <li class="document">Оригинал решения о переименовании улицы (если было переименование)</li>
+          </ul>
+          <div class="documents-footer">
+            <div class="documents-footer-text">Для приватизации земли под жилой дом </div>
+          </div>
+        </div>
+        <div class="documents-needed documents-needed-hide" id="privat-doc">
+          <div class="title">Пакет Документов2</div>
+          <div class="subtitle">Для приватизации земли под жилой дом</div>
+          <ul class="list">
+            <li class="document">Паспорт и идентификационный код владельца (владельцев)</li>
+            <li class="document">Технический паспорт на дом</li>
+            <li class="document">Правоустанавливающий(ие) документ(ы) на домовладение (договор купли-продажи, дарственная, свидетельство о наследстве, госакт, решение суда и т.д.), заверенный(е) нотариально</li>
+            <li class="document">Вытяг из Государственного реестра имущественных прав на недвижимое имущество (нотариальная копия)</li>
+            <li class="document">Оригинал решения о переименовании улицы (если было переименование)</li>
+          </ul>
+          <div class="documents-footer">
+            <div class="documents-footer-text">Для приватизации земли под жилой дом</div>
+          </div>
+        </div>
+        <div class="documents-needed documents-needed-hide" id="geodezic-doc">
+          <div class="title">Пакет Документов3</div>
+          <div class="subtitle">Для приватизации земли под жилой дом</div>
+          <ul class="list">
+            <li class="document">Паспорт и идентификационный код владельца (владельцев)</li>
+            <li class="document">Технический паспорт на дом</li>
+            <li class="document">Правоустанавливающий(ие) документ(ы) на домовладение (договор купли-продажи, дарственная, свидетельство о наследстве, госакт, решение суда и т.д.), заверенный(е) нотариально</li>
+            <li class="document">Вытяг из Государственного реестра имущественных прав на недвижимое имущество (нотариальная копия)</li>
+            <li class="document">Оригинал решения о переименовании улицы (если было переименование)</li>
+          </ul>
+          <div class="documents-footer">
+            <div class="documents-footer-text">Для приватизации земли под жилой дом</div>
+          </div>
+        </div>
+        <div class="documents-needed documents-needed-hide" id="kadastr-doc">
+          <div class="title">Пакет Документов4</div>
+          <div class="subtitle">Для приватизации земли под жилой дом</div>
+          <ul class="list">
+            <li class="document">Паспорт и идентификационный код владельца (владельцев)</li>
+            <li class="document">Технический паспорт на дом</li>
+            <li class="document">Правоустанавливающий(ие) документ(ы) на домовладение (договор купли-продажи, дарственная, свидетельство о наследстве, госакт, решение суда и т.д.), заверенный(е) нотариально</li>
+            <li class="document">Вытяг из Государственного реестра имущественных прав на недвижимое имущество (нотариальная копия)</li>
+            <li class="document">Оригинал решения о переименовании улицы (если было переименование)</li>
+          </ul>
+          <div class="documents-footer">
+            <div class="documents-footer-text">Для приватизации земли под жилой дом</div>
+          </div>
+        </div>
+      </div>
       <div class="gotop"></div>
     </main>
     <footer class="footer" id="footer">
