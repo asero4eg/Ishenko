@@ -510,8 +510,11 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-size: 10px;
   position: relative;
+}
+
+body {
+  font-size: 10px;
 }
 
 * {
@@ -1155,10 +1158,6 @@ a {
   background-position: center;
 }
 
-.privatization {
-  margin-top: 40px;
-}
-
 .privatization-img {
   position: relative;
   background-image: url("../img/background/privatization.jpg");
@@ -1297,9 +1296,6 @@ a {
 
 .kadastr .description-text {
   margin-bottom: 25px;
-}
-.kadastr .title {
-  margin-top: 40px;
 }
 .kadastr .footnote:nth-child(2) {
   margin-bottom: 100px;
@@ -1562,11 +1558,16 @@ a {
   opacity: 0.5;
 }
 
-@media screen and (max-width: 1024px) {
-  html {
-    font-size: 9px;
+@media screen and (max-width: 1260px) {
+  .tabs-titles {
+    margin: 20px 0 40px 0;
   }
-
+  .tabs-titles label {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 1024px) {
   .service {
     flex-direction: column;
     align-items: center;
@@ -1607,5 +1608,301 @@ a {
 
   .geodezic {
     padding: 50px 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .container {
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+  }
+
+  .section-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+
+  .header .contacts {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .contacts-left {
+    order: 2;
+    margin: 20px 0 10px 0;
+  }
+
+  .contacts-left .phone {
+    margin-bottom: 10px;
+  }
+
+  .contacts-left li a {
+    font-size: 1rem;
+    display: block;
+  }
+
+  .logo {
+    order: 1;
+  }
+
+  .logo-text .small {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+  .logo-text .regular {
+    font-size: 1.5rem;
+  }
+
+  .contacts-right {
+    order: 3;
+    margin-top: 20px;
+  }
+  .contacts-right li {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .header .title {
+    font-size: 3.5rem;
+  }
+  .header .title::after {
+    padding: 0 12px;
+    font-size: 3.5rem;
+    top: -10px;
+  }
+
+  .header .about {
+    font-size: 1.3rem;
+    margin-bottom: 70px;
+  }
+
+  .header .button-wrapper {
+    margin-bottom: 50px;
+  }
+  .header .button-wrapper .text {
+    font-size: 1rem;
+  }
+  .header .button-wrapper .button {
+    font-size: 1.3rem;
+  }
+
+  .header-nav ul {
+    justify-content: space-evenly;
+    gap: 20px 14px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  .header-nav ul li a {
+    font-size: 1rem;
+  }
+
+  .steps {
+    gap: 20px 0;
+    padding-bottom: 35px;
+  }
+  .steps .step {
+    max-width: 95%;
+    box-shadow: 0px 0px 15px -3px rgba(34, 60, 80, 0.2);
+  }
+  .steps .step .title {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+  }
+  .steps .step .description {
+    font-size: 1rem;
+  }
+  .steps .step .number {
+    font-size: 10rem;
+    bottom: 0;
+  }
+
+  .contact-us {
+    padding: 25px 0;
+  }
+  .contact-us .button-wrapper .text {
+    font-size: 1.2rem;
+  }
+  .contact-us .button-wrapper .button {
+    font-size: 1.2rem;
+  }
+
+  .phone-call-wrapper .phone-call-text {
+    font-size: 1rem;
+    padding: 15px 0;
+  }
+
+  .phone-call {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+  .phone-call .number {
+    font-size: 1.3rem;
+  }
+
+  .phone-icon-border {
+    margin: 15px 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .phone-icon-fill {
+    width: 60px;
+    height: 60px;
+  }
+
+  .icon-phone_call::before {
+    font-size: 2.1rem;
+  }
+
+  .services {
+    margin-bottom: 30px;
+  }
+
+  .tabs-titles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    gap: 10px 10px;
+  }
+
+  .tabs-titles label {
+    width: 45%;
+    padding: 5px 10px;
+    font-size: 1rem;
+  }
+
+  .service-half {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .service-info {
+    max-width: 100%;
+  }
+  .service-info .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .service-info > .title {
+    font-size: 1.8rem;
+  }
+
+  .bullets-title {
+    font-size: 1.2rem;
+  }
+
+  .bullets-list {
+    margin-bottom: 30px;
+  }
+  .bullets-list .bullet {
+    font-size: 1rem;
+  }
+
+  .footnote {
+    font-size: 1.1rem;
+  }
+  .footnote .title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  .footnote .price {
+    font-size: 1.6rem;
+  }
+
+  .documents-link {
+    font-size: 1.2rem;
+  }
+
+  .services .button-wrapper .button {
+    font-size: 1.2rem;
+  }
+
+  .description .bullet {
+    font-size: 1.1rem;
+  }
+
+  .description .text {
+    font-size: 1.1rem;
+    line-height: 1.7rem;
+  }
+
+  .advantages-title {
+    font-size: 1.8rem;
+  }
+
+  .advantages-list {
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .advantage {
+    box-shadow: 0px 0px 15px -3px rgba(34, 60, 80, 0.2);
+    padding: 14px 20px 30px;
+  }
+  .advantage .title {
+    font-size: 1.2rem;
+  }
+  .advantage .text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .icon {
+    font-size: 2.3rem;
+  }
+
+  .about-us {
+    display: none;
+  }
+
+  .faq-wrapper {
+    padding: 30px 15px;
+  }
+
+  .faq-title {
+    padding: 15px 50px 15px 15px;
+    font-size: 1.2rem;
+  }
+  .faq-title::after {
+    top: 12px;
+    font-size: 1.3rem;
+  }
+
+  .faq-text {
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  .form-inputs {
+    gap: 15px;
+  }
+  .form-inputs input {
+    font-size: 1rem;
+    padding: 7px 0 7px 15px;
+  }
+
+  .form-btn {
+    font-size: 1.2rem;
+    width: 85%;
+  }
+
+  .footer-nav ul {
+    justify-content: space-evenly;
+    gap: 20px 10px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    padding: 0;
+    font-size: 1rem;
+  }
+
+  .footer-item {
+    font-size: 0.8rem;
   }
 }
