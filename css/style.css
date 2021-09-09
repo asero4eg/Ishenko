@@ -513,7 +513,7 @@ body {
   position: relative;
 }
 
-body {
+html {
   font-size: 10px;
 }
 
@@ -1317,7 +1317,7 @@ a {
 
 .advantages-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 30px 100px;
 }
@@ -1844,7 +1844,7 @@ a {
   }
 
   .icon {
-    font-size: 2.3rem;
+    font-size: 3.3rem;
   }
 
   .about-us {
@@ -1877,6 +1877,7 @@ a {
     gap: 15px;
   }
   .form-inputs input {
+    width: 55%;
     font-size: 1rem;
     padding: 7px 0 7px 15px;
   }
