@@ -44,28 +44,28 @@ bg.addEventListener('click', docHide)
 function docShow(e) {
   if (e.target.dataset.id === 'legalize' && legalize.classList.contains('documents-needed-hide')) {
     bg.style.display = 'block';
-   document.querySelector('body').style.overflowY='hidden';
+    document.querySelector('body').style.overflowY = 'hidden';
     legalize.classList.remove('documents-needed-hide');
     legalize.classList.add('documents-needed-show');
     console.log('legalize')
   }
   if (e.target.dataset.id === 'privat' && privat.classList.contains('documents-needed-hide')) {
     bg.style.display = 'block';
-    document.querySelector('body').style.overflowY='hidden';
+    document.querySelector('body').style.overflowY = 'hidden';
     privat.classList.remove('documents-needed-hide');
     privat.classList.add('documents-needed-show');
     console.log('privat')
   }
   if (e.target.dataset.id === 'geodezic' && geodezic.classList.contains('documents-needed-hide')) {
     bg.style.display = 'block';
-    document.querySelector('body').style.overflowY='hidden';
+    document.querySelector('body').style.overflowY = 'hidden';
     geodezic.classList.remove('documents-needed-hide');
     geodezic.classList.add('documents-needed-show');
     console.log('geodezic')
   }
   if (e.target.dataset.id === 'kadastr' && kadastr.classList.contains('documents-needed-hide')) {
     bg.style.display = 'block';
-    document.querySelector('body').style.overflowY='hidden';
+    document.querySelector('body').style.overflowY = 'hidden';
     kadastr.classList.remove('documents-needed-hide');
     kadastr.classList.add('documents-needed-show');
     console.log('kadastr')
@@ -74,8 +74,28 @@ function docShow(e) {
 function docHide() {
   for (let i = 0; i < modalWindows.length; i++) {
     bg.style.display = 'none';
-    document.querySelector('body').style.overflowY='auto';
+    document.querySelector('body').style.overflowY = 'auto';
     modalWindows[i].classList.remove('documents-needed-show');
     modalWindows[i].classList.add('documents-needed-hide');
   }
 }
+
+//Documents popup accordeon
+$(function () {
+  // hide all content
+  let popups = ['legalize', 'privat', 'geodezic', 'kadastr']
+  for (let i of popups) {
+    let element = $(`#${i}-doc`);
+    element.find('.accordeon-content').slice(1).hide();
+    element.find('.accordeon-title').click(function () {
+      $(this).parent().toggleClass('active').siblings().removeClass('active');
+      element.find('.accordeon-content').slideUp();
+
+      if (!$(this).next().is(":visible")) {
+        $(this).next().slideDown();
+      }
+    });
+  }
+
+
+});

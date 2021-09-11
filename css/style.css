@@ -522,6 +522,11 @@ html {
   box-sizing: border-box;
 }
 
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -556,10 +561,10 @@ a {
   font-family: "Roboto", sans-serif;
   font-size: 5rem;
   font-weight: bold;
-  color: #707070;
+  color: #353535;
   text-align: center;
   margin-bottom: 40px;
-  padding-bottom: 55px;
+  padding-bottom: 30px;
 }
 .section-title::after {
   content: "";
@@ -570,7 +575,7 @@ a {
   background: linear-gradient(234deg, #ff8944 0%, #ffdf00 74%);
   bottom: 0;
   width: 102px;
-  height: 8px;
+  height: 6px;
   margin-left: 50%;
   transform: translateX(-50%);
 }
@@ -706,9 +711,9 @@ a {
 
 .contacts-right li {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-weight: 300;
+  font-size: 1.7rem;
+  margin-bottom: 15px;
 }
 .contacts-right li:last-child {
   margin-bottom: 0;
@@ -720,26 +725,12 @@ a {
   text-align: center;
   color: white;
   margin: 55px 0 85px 0;
-  z-index: 1000;
-}
-.header .title::after {
-  content: "Узаконим самострой";
-  position: absolute;
-  top: -25px;
-  left: 0;
-  right: 0;
-  font-size: 12rem;
-  color: transparent;
-  padding: 0 48px;
-  opacity: 0.5;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
 }
 
 .header .about {
   text-align: center;
   color: white;
-  font-size: 2.2rem;
+  font-size: 1.9rem;
   margin-bottom: 125px;
 }
 .header .about .text {
@@ -770,7 +761,7 @@ a {
   display: block;
   width: 100%;
   max-width: 800px;
-  margin-top: 35px;
+  margin-top: 20px;
   padding: 20px 0;
   background: #ffed6d;
   background: radial-gradient(circle, #ffed6d 0%, #ffde58 74%);
@@ -808,6 +799,8 @@ a {
   color: #1C1D23;
 }
 .about-us .text {
+  max-width: 1300px;
+  margin: 0 auto;
   font-size: 1.7rem;
   text-align: center;
   line-height: 4rem;
@@ -827,7 +820,7 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 90px;
-  border-bottom: 2px dashed #1c1d23;
+  border-bottom: 2px dashed #e4e4e4;
   gap: 50px;
 }
 .steps .step {
@@ -972,11 +965,11 @@ a {
 .tabs-titles {
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
 }
 
 .tab-lbl {
-  color: #4B4B4B;
+  color: #4b4b4b;
 }
 
 .tabs-wrapper > input[type=radio] {
@@ -999,16 +992,16 @@ a {
 #tab-btn-2:checked ~ .tabs-titles #tab-lbl-2,
 #tab-btn-3:checked ~ .tabs-titles #tab-lbl-3,
 #tab-btn-4:checked ~ .tabs-titles #tab-lbl-4 {
-  background-color: #FFF294;
-  border: 2px solid #FFDE58;
+  background-color: #fff294;
+  border: 2px solid #ffde58;
 }
 
 #tab-btn-1:hover ~ .tabs-titles #tab-lbl-1,
 #tab-btn-2:hover ~ .tabs-titles #tab-lbl-2,
 #tab-btn-3:hover ~ .tabs-titles #tab-lbl-3,
 #tab-btn-4:hover ~ .tabs-titles #tab-lbl-4 {
-  background-color: #FFF294;
-  border: 2px solid #FFDE58;
+  background-color: #fff294;
+  border: 2px solid #ffde58;
 }
 
 .tabs-titles > label {
@@ -1021,7 +1014,7 @@ a {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  border: 2px dashed #DEDEDE;
+  border: 2px dashed #dedede;
   padding: 18px 35px;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
   cursor: pointer;
@@ -1047,7 +1040,7 @@ a {
   font-size: 3rem;
   font-weight: bold;
   border-bottom: 2px dashed gray;
-  color: #1C1D23;
+  color: #1c1d23;
 }
 .service-info .subtitle {
   font-family: "Roboto", sans-serif;
@@ -1059,7 +1052,7 @@ a {
 .bullets-title {
   margin: 0 0 35px 0;
   font-size: 2rem;
-  color: #1C1D23;
+  color: #1c1d23;
 }
 
 .bullets-list {
@@ -1071,7 +1064,7 @@ a {
   position: relative;
   padding: 0 0 0 15px;
   font-size: 1.7rem;
-  color: #1C1D23;
+  color: #1c1d23;
 }
 .bullets-list .bullet::after {
   content: "";
@@ -1107,27 +1100,27 @@ a {
 }
 .footnote .title {
   font-size: 2rem;
-  color: #1C1D23;
+  color: #1c1d23;
   margin-bottom: 25px;
 }
 .footnote .price {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 3.3rem;
-  color: #474A5A;
+  color: #474a5a;
 }
 
 .documents-link {
   text-align: center;
   font-size: 1.9rem;
   margin-bottom: 20px;
-  border: 2px dashed #4C4D53;
+  border: 2px dashed #4c4d53;
   padding: 19px 0;
   cursor: pointer;
 }
 .documents-link span {
   text-decoration: underline;
-  color: #3E404E;
+  color: #3e404e;
 }
 
 .services .button-wrapper {
@@ -1145,7 +1138,7 @@ a {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   text-align: center;
-  color: #474A5A;
+  color: #474a5a;
 }
 .services .button-wrapper .button:hover {
   cursor: pointer;
@@ -1169,7 +1162,7 @@ a {
 .description .bullet {
   padding: 10px 0 10px 10px;
   font-size: 1.7rem;
-  color: #4A4A4A;
+  color: #4a4a4a;
 }
 .description .bullet:nth-child(1) {
   background-color: #f5f5f5;
@@ -1211,20 +1204,15 @@ a {
   width: 760px;
   margin: 0 auto;
   transform: translateY(-50%) translateX(-50%);
-  border-radius: 30px;
   overflow: hidden;
   box-shadow: 0px 0px 30px -3px rgba(0, 0, 0, 0.385);
   background-color: #fff;
 }
 .documents-needed .title {
+  text-align: center;
   font-size: 2.5rem;
   font-weight: bold;
-  text-align: center;
-  line-height: 3rem;
-  padding: 18px 0;
-  color: #3E404E;
-  background: #ffed6d;
-  background: radial-gradient(circle, #ffed6d 0%, #ffde58 74%);
+  margin: 15px 0;
 }
 .documents-needed .subtitle {
   font-size: 2rem;
@@ -1238,7 +1226,7 @@ a {
 .documents-needed .list .document {
   position: relative;
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 1.7rem;
   border-bottom: 2px dashed gray;
   padding: 20px 0 20px 25px;
 }
@@ -1308,9 +1296,47 @@ a {
   background-position: center;
 }
 
+.active > .accordeon-title:after {
+  transform: translateX(-50%) rotateZ(90deg);
+  transition: all ease 0.2s;
+}
+
+.accordeon-item:nth-child(2n) .accordeon-title {
+  background-color: #fff39c;
+}
+
+.accordeon-title {
+  position: relative;
+  cursor: pointer;
+  font-size: 2rem;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  line-height: 3rem;
+  padding: 35px 0 15px 0;
+  color: #3e404e;
+  background-color: #fff9ce;
+}
+.accordeon-title:after {
+  content: "";
+  display: block;
+  position: absolute;
+  font-family: "icomoon";
+  font-size: 2.8rem;
+  font-weight: bold;
+  top: 5px;
+  left: 50%;
+  transform-origin: center;
+  transform: translateX(-50%) rotateZ(270deg);
+  transition: all ease 0.2s;
+}
+
+.accordeon-content {
+  margin-bottom: 10px;
+}
+
 .advantages-title {
   text-align: center;
-  font-size: 4.2rem;
+  font-size: 2rem;
   margin-bottom: 30px;
   color: #1c1d23;
 }
@@ -1329,6 +1355,9 @@ a {
 }
 .advantage:hover {
   box-shadow: 0px 3px 11px -3px rgba(112, 112, 112, 0.2);
+}
+.advantage:hover .title::after {
+  background-size: 100%;
 }
 .advantage .icon-wrapper {
   width: 65.5px;
@@ -1355,8 +1384,10 @@ a {
   left: 50%;
   transform: translateX(-50%);
   height: 3px;
-  background: #ff8944;
-  background: linear-gradient(234deg, #ff8944 0%, #ffdf00 74%);
+  background-size: 300%;
+  background-position: 0;
+  background-image: linear-gradient(234deg, #ff8944 0%, #ffdf00 73%);
+  transition: 0.3s ease-in;
   width: 30%;
 }
 .advantage .text {
@@ -1387,6 +1418,7 @@ a {
   color: white;
   margin-bottom: 10px;
   vertical-align: middle;
+  padding: 25px;
 }
 
 .faq-title {
@@ -1396,13 +1428,13 @@ a {
   cursor: pointer;
   font-size: 3rem;
   font-family: "Roboto", sans-serif;
-  padding: 25px 50px 25px 25px;
+  padding: 0 50px 0 0;
 }
 .faq-title::after {
   content: "";
   display: block;
   position: absolute;
-  top: 20px;
+  top: -7px;
   right: 20px;
   transform: rotateZ(90deg);
   font-family: "icomoon";
@@ -1410,7 +1442,7 @@ a {
   font-weight: bold;
   color: white;
   line-height: 50px;
-  transition: transform 0.2s ease-in, color 0.2s ease-in;
+  transition: transform 0.2s ease-out, color 0.2s ease-out;
 }
 
 .faq-input {
@@ -1421,6 +1453,9 @@ a {
 .faq-input:checked ~ .faq-text {
   display: block;
 }
+.faq-input:checked ~ .faq-title {
+  padding: 0 50px 25px 0;
+}
 .faq-input:checked ~ .faq-title:after {
   transform: rotateZ(270deg);
   color: #FFF8C7;
@@ -1430,8 +1465,8 @@ a {
   display: none;
   font-size: 2rem;
   font-family: "Roboto", sans-serif;
-  border-top: 2px dashed white;
-  padding: 25px;
+  border-top: 2px dashed #faffa8;
+  padding: 25px 0 0 0;
 }
 
 .form {
