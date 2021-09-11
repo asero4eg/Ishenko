@@ -669,10 +669,12 @@ a {
   padding: 0;
   list-style: none;
   color: white;
+  width: 33.3%;
 }
 
 .contacts-right li {
   font-family: "Roboto", sans-serif;
+  text-align: right;
 }
 
 .contacts-left li a {
@@ -690,6 +692,7 @@ a {
 }
 
 .logo {
+  width: 33.3%;
   text-align: center;
 }
 
@@ -1741,7 +1744,7 @@ a {
     }
   }
   .header .title {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     color: transparent;
