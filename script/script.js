@@ -44,6 +44,7 @@ bg.addEventListener('click', docHide)
 function docShow(e) {
   if (e.target.dataset.id === 'legalize' && legalize.classList.contains('documents-needed-hide')) {
     bg.style.display = 'block';
+    addBlur();
     document.querySelector('body').style.overflowY = 'hidden';
     legalize.classList.remove('documents-needed-hide');
     legalize.classList.add('documents-needed-show');
@@ -51,6 +52,7 @@ function docShow(e) {
   }
   if (e.target.dataset.id === 'privat' && privat.classList.contains('documents-needed-hide')) {
     bg.style.display = 'block';
+    addBlur();
     document.querySelector('body').style.overflowY = 'hidden';
     privat.classList.remove('documents-needed-hide');
     privat.classList.add('documents-needed-show');
@@ -58,6 +60,7 @@ function docShow(e) {
   }
   if (e.target.dataset.id === 'geodezic' && geodezic.classList.contains('documents-needed-hide')) {
     bg.style.display = 'block';
+    addBlur();
     document.querySelector('body').style.overflowY = 'hidden';
     geodezic.classList.remove('documents-needed-hide');
     geodezic.classList.add('documents-needed-show');
@@ -65,6 +68,7 @@ function docShow(e) {
   }
   if (e.target.dataset.id === 'kadastr' && kadastr.classList.contains('documents-needed-hide')) {
     bg.style.display = 'block';
+    addBlur();
     document.querySelector('body').style.overflowY = 'hidden';
     kadastr.classList.remove('documents-needed-hide');
     kadastr.classList.add('documents-needed-show');
@@ -74,9 +78,24 @@ function docShow(e) {
 function docHide() {
   for (let i = 0; i < modalWindows.length; i++) {
     bg.style.display = 'none';
+    removeBlur()
     document.querySelector('body').style.overflowY = 'auto';
     modalWindows[i].classList.remove('documents-needed-show');
     modalWindows[i].classList.add('documents-needed-hide');
+  }
+}
+function addBlur() {
+  let blocks = ['workflow', 'services', 'why-us', 'about-us', 'faq', 'form-section', 'footer']
+  for (let i of blocks) {
+    let element = document.querySelector(`#${i}`);
+    element.style.filter = 'blur(3px)';
+  }
+}
+function removeBlur() {
+  let blocks = ['workflow', 'services', 'why-us', 'about-us', 'faq', 'form-section', 'footer']
+  for (let i of blocks) {
+    let element = document.querySelector(`#${i}`);
+    element.style.filter = 'blur(0)';
   }
 }
 
@@ -96,6 +115,4 @@ $(function () {
       }
     });
   }
-
-
 });
