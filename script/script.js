@@ -116,13 +116,3 @@ $(function () {
     });
   }
 });
-
-//Interactive gradient
-document.querySelector('.header-title').onmousemove = function clickEvent(e) {
-  // e = Mouse click event.
-  var rect = e.target.getBoundingClientRect();
-  var x = e.clientX - rect.left; //x position within the element.
-  var y = e.clientY - rect.top;  //y position within the element.
-  e.target.style.backgroundPositionX = `${x}px`
-  e.target.style.backgroundPositionY = `${y}px`
-}
