@@ -116,6 +116,8 @@ $(function () {
     });
   }
 });
+
+//Interactive gradient
 document.querySelector('.header-title').onmousemove = function clickEvent(e) {
   // e = Mouse click event.
   var rect = e.target.getBoundingClientRect();
@@ -123,5 +125,4 @@ document.querySelector('.header-title').onmousemove = function clickEvent(e) {
   var y = e.clientY - rect.top;  //y position within the element.
   e.target.style.backgroundPositionX = `${x}px`
   e.target.style.backgroundPositionY = `${y}px`
-  console.log("Left? : " + x + " ; Top? : " + y + ".");
 }
