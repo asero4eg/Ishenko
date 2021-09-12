@@ -7,6 +7,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+//Header navigation accordeon
+document.querySelector('.mobile-nav-title').addEventListener('click', () => {
+  document.querySelector('.mobile-nav-content').classList.toggle('mobile-active')
+  console.log('click')
+})
+//
 
 // Go top btn
 var btn = $('.gotop');
@@ -116,3 +122,14 @@ $(function () {
     });
   }
 });
+
+//Faq accordeon
+$(document).ready(function () {
+  $('.faq-title').click(function (e) {
+    if ($('.faq').hasClass('one')) {
+      $('.faq-title').not($(this)).removeClass('active');
+      $('.faq-text').not($(this).next()).slideUp(300)
+    }
+    $(this).toggleClass('active').next().slideToggle(300)
+  })
+})

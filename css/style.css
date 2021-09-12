@@ -843,6 +843,10 @@ a {
   color: #ffe427;
 }
 
+.mobile-nav-wrapper {
+  display: none;
+}
+
 .about-us {
   color: #1C1D23;
   margin-bottom: 70px;
@@ -1486,49 +1490,40 @@ a {
   vertical-align: middle;
   padding: 0 25px;
 }
-
 .faq-title {
-  position: relative;
-  display: block;
-  height: 100%;
-  cursor: pointer;
   font-size: 3rem;
   font-weight: 300;
   font-family: "Roboto", sans-serif;
   padding: 25px 50px 25px 0;
+  position: relative;
+  cursor: pointer;
 }
-.faq-title::after {
-  content: "";
-  display: block;
+.faq-title:before, .faq-title:after {
+  content: "";
+  width: 10px;
+  height: 2px;
+  background-color: #fff;
   position: absolute;
   top: 50%;
-  right: 20px;
-  transform: rotateZ(90deg);
-  transform-origin: center;
-  font-family: "icomoon";
-  font-size: 1.8rem;
-  height: 50px;
-  width: 17px;
-  font-weight: bold;
-  color: white;
-  line-height: 50px;
-  transition: transform 0.2s ease-out, color 0.2s ease-out;
+  transition: all 0.3s;
 }
-
-.faq-input {
-  width: 0;
-  height: 0;
-  display: none;
+.faq-title:before {
+  transform: rotate(45deg);
+  right: 0;
 }
-.faq-input:checked ~ .faq-text {
-  display: block;
+.faq-title:after {
+  transform: rotate(-45deg);
+  right: 6.5px;
 }
-.faq-input:checked ~ .faq-title:after {
-  transform: rotateZ(270deg);
-  transform-origin: center;
-  color: #FFF8C7;
+.faq-title.active:before, .faq-title.active:after {
+  background-color: #fff8c7;
 }
-
+.faq-title.active:before {
+  transform: rotate(-45deg);
+}
+.faq-title.active:after {
+  transform: rotate(45deg);
+}
 .faq-text {
   display: none;
   font-size: 2rem;
@@ -1805,6 +1800,44 @@ a {
   }
 }
 @media screen and (max-width: 760px) {
+  .mobile-nav-wrapper {
+    display: block;
+  }
+
+  .mobile-nav {
+    background-color: rgba(0, 0, 0, 0.35);
+  }
+
+  .mobile-active {
+    display: block !important;
+  }
+
+  .mobile-nav-content {
+    display: none;
+  }
+
+  .mobile-nav-title {
+    text-align: center;
+  }
+
+  .mobile-nav-title-text {
+    position: relative;
+    z-index: 1002;
+    font-size: 4rem;
+    color: white;
+  }
+
+  .mobile-nav-item {
+    padding: 10px 0;
+    text-align: center;
+  }
+  .mobile-nav-item a {
+    position: relative;
+    z-index: 1002;
+    font-size: 1.8rem;
+    color: white;
+  }
+
   .container {
     margin-bottom: 30px;
   }
@@ -2069,11 +2102,6 @@ a {
 
   .faq-title {
     font-size: 1.5rem;
-  }
-  .faq-title::after {
-    right: 0;
-    top: -10px;
-    font-size: 1.3rem;
   }
 
   .faq-text {
