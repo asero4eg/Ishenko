@@ -756,11 +756,18 @@ a {
 }
 
 .header .title {
+  cursor: default;
   position: relative;
   font-size: 13rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
   text-align: center;
-  color: white;
+  color: transparent;
   margin: 55px 0 85px 0;
+  -webkit-background-clip: text;
+          background-clip: text;
+  background-image: radial-gradient(circle, #fad43b 27%, white 60%);
+  background-size: 100% 100%;
 }
 
 .header .about {
@@ -1709,7 +1716,7 @@ a {
   }
 
   .section-title {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     padding-bottom: 25px;
     margin-bottom: 25px;
   }
@@ -1751,16 +1758,9 @@ a {
   }
 
   .header .title {
-    cursor: default;
     margin: 25px 0;
     font-size: 5.5rem;
-    font-family: "Roboto", sans-serif;
-    font-weight: 900;
     color: transparent;
-    -webkit-background-clip: text;
-            background-clip: text;
-    background-image: linear-gradient(-45deg, #ffffff 15%, #ffed6d, #fad43b, #ffffff);
-    background-size: 100% 100%;
   }
 
   .header .about {
@@ -1857,9 +1857,9 @@ a {
   }
 
   .tabs-titles label {
-    width: 65%;
+    width: 75%;
     padding: 5px 10px;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
   }
 
   .service-half {
@@ -1930,21 +1930,17 @@ a {
   }
   .advantage .title {
     font-size: 1.4rem;
+    margin-bottom: 14px;
+    padding-bottom: 14px;
   }
   .advantage .text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
   }
 
   .icon {
     position: relative;
     font-size: 3.3rem;
-  }
-  .icon::before {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
   }
 
   .about-us {
@@ -1956,7 +1952,7 @@ a {
   }
 
   .faq-title {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .faq-title::after {
     right: 0;
@@ -1965,7 +1961,7 @@ a {
   }
 
   .faq-text {
-    font-size: 1rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
   }
 
@@ -1977,24 +1973,28 @@ a {
     gap: 15px;
   }
   .form-inputs input {
-    width: 55%;
-    font-size: 1rem;
+    width: 75%;
+    font-size: 1.4rem;
     padding: 7px 0 7px 15px;
   }
 
   .form-btn {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     width: 85%;
   }
 
   .form-contacts-text {
-    font-size: 1.2rem;
+    text-align: center;
+    font-size: 1.4rem;
     margin-bottom: 20px;
   }
 
+  .form-contacts {
+    margin-bottom: 0;
+  }
   .form-contacts .phone,
 .form-contacts .email {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .form-contacts .phone:nth-child(2) {
@@ -2011,6 +2011,6 @@ a {
   }
 
   .footer-item {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
   }
 }
