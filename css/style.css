@@ -468,10 +468,17 @@ a {
 }
 
 .icon {
+  position: relative;
   font-size: 3.6rem;
   text-align: center;
   height: 100%;
-  color: #1C1D23;
+  color: #1c1d23;
+}
+.icon::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icon-arrow:before {
@@ -1696,7 +1703,7 @@ a {
     padding: 50px 0;
   }
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 760px) {
   .container {
     margin-bottom: 30px;
   }
@@ -1733,10 +1740,10 @@ a {
 
   .logo-text .small {
     margin-top: 10px;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .logo-text .regular {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .contacts-right {
@@ -1744,6 +1751,7 @@ a {
   }
 
   .header .title {
+    cursor: default;
     margin: 25px 0;
     font-size: 5.5rem;
     font-family: "Roboto", sans-serif;
@@ -1751,14 +1759,12 @@ a {
     color: transparent;
     -webkit-background-clip: text;
             background-clip: text;
-    background-image: linear-gradient(-45deg, #ffffff 30%, #ffed6d, #fad43b, #ffffff);
-    background-size: 400% 400%;
-    -webkit-animation: gradient 10s ease infinite;
-            animation: gradient 10s ease infinite;
+    background-image: linear-gradient(-45deg, #ffffff 15%, #ffed6d, #fad43b, #ffffff);
+    background-size: 100% 100%;
   }
 
   .header .about {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-bottom: 70px;
   }
 
@@ -1766,10 +1772,10 @@ a {
     margin-bottom: 50px;
   }
   .header .button-wrapper .text {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   .header .button-wrapper .button {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .header-nav {
@@ -1781,7 +1787,8 @@ a {
     padding-bottom: 35px;
   }
   .steps .step {
-    max-width: 95%;
+    padding: 25px 15px;
+    max-width: 100%;
     box-shadow: 0px 0px 15px -3px rgba(34, 60, 80, 0.2);
   }
   .steps .step .title {
@@ -1789,7 +1796,7 @@ a {
     margin-bottom: 15px;
   }
   .steps .step .description {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .steps .step .number {
     font-size: 10rem;
@@ -1800,10 +1807,10 @@ a {
     padding: 25px 0;
   }
   .contact-us .button-wrapper .text {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .contact-us .button-wrapper .button {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .vertical-dashes {
@@ -1811,7 +1818,7 @@ a {
   }
 
   .phone-call-wrapper .phone-call-text {
-    font-size: 1rem;
+    font-size: 1.4rem;
     padding: 15px 0;
   }
 
@@ -1820,7 +1827,7 @@ a {
     flex-direction: column;
   }
   .phone-call .number {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .phone-icon-border {
@@ -1844,15 +1851,15 @@ a {
 
   .tabs-titles {
     display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    gap: 10px 10px;
+    flex-direction: column;
+    gap: 10px 0;
+    margin-bottom: 20px;
   }
 
   .tabs-titles label {
-    width: 45%;
+    width: 65%;
     padding: 5px 10px;
-    font-size: 1rem;
+    font-size: 1.4rem;
   }
 
   .service-half {
@@ -1863,30 +1870,27 @@ a {
   .service-info {
     max-width: 100%;
   }
-  .service-info .subtitle {
-    font-size: 1.3rem;
-  }
 
   .service-info > .title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .bullets-title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .bullets-list {
     margin-bottom: 30px;
   }
   .bullets-list .bullet {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
 
   .footnote {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
   .footnote .title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-bottom: 10px;
   }
   .footnote .price {
@@ -1894,19 +1898,19 @@ a {
   }
 
   .documents-link {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .services .button-wrapper .button {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .description .bullet {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .description .text {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     line-height: 1.7rem;
   }
 
@@ -1925,15 +1929,22 @@ a {
     padding: 14px 20px 30px;
   }
   .advantage .title {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .advantage .text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5rem;
   }
 
   .icon {
+    position: relative;
     font-size: 3.3rem;
+  }
+  .icon::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .about-us {
