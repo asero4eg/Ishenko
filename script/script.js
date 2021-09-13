@@ -81,6 +81,8 @@ function docShow(e) {
     console.log('kadastr')
   }
 }
+
+// Hide modal document
 function docHide() {
   for (let i = 0; i < modalWindows.length; i++) {
     bg.style.display = 'none';
@@ -90,15 +92,18 @@ function docHide() {
     modalWindows[i].classList.add('documents-needed-hide');
   }
 }
+
+// Add blur
+const blocks = ['workflow', 'services', 'why-us', 'about-us', 'faq', 'form-section', 'footer'];
 function addBlur() {
-  let blocks = ['workflow', 'services', 'why-us', 'about-us', 'faq', 'form-section', 'footer']
   for (let i of blocks) {
     let element = document.querySelector(`#${i}`);
     element.style.filter = 'blur(3px)';
   }
 }
+
+// Remove blur
 function removeBlur() {
-  let blocks = ['workflow', 'services', 'why-us', 'about-us', 'faq', 'form-section', 'footer']
   for (let i of blocks) {
     let element = document.querySelector(`#${i}`);
     element.style.filter = 'blur(0)';
