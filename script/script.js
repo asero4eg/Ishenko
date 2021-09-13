@@ -139,4 +139,11 @@ $(document).ready(function () {
     }
     $(this).toggleClass('active').next().slideToggle(300)
   })
+  $('.faq-text').click(function (e) {
+    if ($('.faq').hasClass('one')) {
+      $('.faq-title').not($(this)).removeClass('active');
+      $('.faq-text').not($(this).next()).slideUp(300)
+    }
+    $(this).toggleClass('active').next().slideToggle(300)
+  })
 })

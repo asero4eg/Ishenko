@@ -903,6 +903,7 @@ a {
   transition: box-shadow 0.1s ease-in;
 }
 .steps .step:hover {
+  cursor: default;
   box-shadow: 0px 3px 11px -3px rgba(112, 112, 112, 0.2);
 }
 .steps .step .text {
@@ -1107,6 +1108,7 @@ a {
 .half-text {
   display: flex;
   justify-content: center;
+  padding: 0 10px;
 }
 
 .service-info {
@@ -1503,6 +1505,7 @@ a {
 }
 
 .faq-item {
+  cursor: default;
   background-color: #2f3033;
   color: white;
   margin-bottom: 10px;
@@ -1545,8 +1548,9 @@ a {
 }
 .faq-text {
   display: none;
-  font-size: 2rem;
+  font-size: 1.65rem;
   font-family: "Raleway", sans-serif;
+  line-height: 2.5rem;
   border-top: 2px dashed #faffa8;
   padding: 25px 0 25px 0;
 }
@@ -1931,7 +1935,7 @@ a {
   }
 
   .mobile-nav-item {
-    padding: 8px 0 10px 0;
+    padding: 13px 0 15px 0;
     text-align: center;
   }
   .mobile-nav-item a {
