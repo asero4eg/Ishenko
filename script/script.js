@@ -9,12 +9,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 //Header navigation accordeon
 
-$( function() {
-  $( ".mobile-nav" ).accordion({
+$(function () {
+  $(".mobile-nav").accordion({
     collapsible: true,
-    active:false
+    active: false
   });
-} );
+});
 
 // Go top btn
 var btn = $('.gotop');
@@ -148,8 +148,8 @@ $(document).ready(function () {
   })
 })
 // Footer tooltip
-$( function() {
-  $( '.footer-copyright' ).tooltip({
-    track: true
-  });
-} );
+tippy('.footer-copyright', {
+  content: 'Markup by @asero4eg | Design by @RoadToCppDev',
+  followCursor: true,
+  maxWidth: 450,
+});

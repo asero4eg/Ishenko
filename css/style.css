@@ -1683,18 +1683,11 @@ a {
   margin-bottom: 20px;
   color: #656565;
   opacity: 0.5;
+  font-size: 1.4rem;
 }
 
-.ui-tooltip {
-  color: #272727;
-  border-radius: 20px;
-  font: normal 1.1rem "Roboto", Sans-Serif;
-  box-shadow: none;
-}
-
-.ui-tooltip, .arrow:after {
-  background: #ececec;
-  border: 2px solid white;
+.tippy-content {
+  font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1260px) {
