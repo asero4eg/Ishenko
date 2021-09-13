@@ -1911,7 +1911,7 @@ a {
   .mobile-nav-title-text {
     position: relative;
     z-index: 1002;
-    font-size: 4rem;
+    font-size: 3rem;
     color: white;
   }
   .mobile-nav-title-text::after {
