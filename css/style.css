@@ -852,7 +852,7 @@ a {
 }
 
 .about-us {
-  color: #1C1D23;
+  color: #1c1d23;
   margin-bottom: 70px;
 }
 .about-us .text {
@@ -867,10 +867,22 @@ a {
   margin-bottom: 40px;
 }
 .about-us .subtext {
+  position: relative;
   color: #3a3a3a;
   text-align: center;
   font-weight: bold;
-  font-size: 2.3rem;
+  font-size: 2rem;
+}
+.about-us .subtext::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4px;
+  background: #ff8944;
+  background: linear-gradient(234deg, #ff8944 0%, #ffdf00 74%);
+  bottom: 0;
+  width: 100%;
+  height: 2px;
 }
 
 .steps {
@@ -2122,8 +2134,21 @@ a {
     font-size: 4rem;
   }
 
-  .about-us {
-    display: none;
+  .about-us .text {
+    padding: 0;
+  }
+  .about-us .text .main {
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+  }
+  .about-us .text .subtext {
+    padding: 0 10px;
+    font-size: 1.3rem;
+  }
+  .about-us .text .subtext::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
   }
 
   .faq-wrapper {
