@@ -721,11 +721,14 @@ a {
 .contacts-left li a {
   display: inline-block;
   font-family: "Roboto", sans-serif;
-  font-weight: 300;
   font-size: 1.7rem;
   color: white;
 }
+.contacts-left li a:hover {
+  color: #ffe427;
+}
 .contacts-left .phone {
+  font-weight: 500;
   margin-bottom: 30px;
 }
 .contacts-left .phone a:nth-child(1) {
