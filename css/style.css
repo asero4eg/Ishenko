@@ -629,20 +629,21 @@ a {
 .gotop {
   display: inline-block;
   position: fixed;
-  opacity: 0;
-  visibility: hidden;
   cursor: pointer;
+  visibility: hidden;
+  z-index: 1000;
+  opacity: 0;
   right: 40px;
   bottom: 40px;
-  border-radius: 50%;
-  background-color: #ffe427;
   height: 50px;
   width: 50px;
-  z-index: 1000;
+  border-radius: 50%;
+  background-color: #ffe427;
   text-align: center;
   -webkit-animation: gotopAnim 1s ease-in 1s infinite;
           animation: gotopAnim 1s ease-in 1s infinite;
   transition: opacity 0.2s linear, visibility 0.1s ease-in;
+  box-shadow: 0px 3px 11px -3px rgba(112, 112, 112, 0.2);
 }
 .gotop::after {
   display: inline-block;
@@ -650,14 +651,11 @@ a {
   transform: rotateZ(270deg);
   font-family: "icomoon";
   font-size: 13px;
+  font-weight: bold;
   color: black;
   vertical-align: middle;
   line-height: 50px;
   width: 100%;
-  font-weight: bold;
-}
-.gotop:hover {
-  background-color: #c2c20f;
 }
 
 .gotop.show {
