@@ -536,6 +536,14 @@ a {
   vertical-align: sub;
 }
 
+.icon-menu-down:before {
+  content: "";
+}
+
+.icon-menu-up:before {
+  content: "";
+}
+
 html,
 body {
   padding: 0;
@@ -1891,12 +1899,24 @@ a {
   .mobile-nav-title {
     text-align: center;
   }
+  .mobile-nav-title:active .mobile-nav-title-text {
+    cursor: default;
+    color: #ffe427;
+  }
+  .mobile-nav-title:active .mobile-nav-title-text::after {
+    font-family: "icomoon";
+    content: "";
+  }
 
   .mobile-nav-title-text {
     position: relative;
     z-index: 1002;
     font-size: 4rem;
     color: white;
+  }
+  .mobile-nav-title-text::after {
+    font-family: "icomoon";
+    content: "";
   }
 
   .mobile-nav-item {

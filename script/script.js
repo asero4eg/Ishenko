@@ -8,11 +8,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 //Header navigation accordeon
-document.querySelector('.mobile-nav-title').addEventListener('click', () => {
-  document.querySelector('.mobile-nav-content').classList.toggle('mobile-active')
-  console.log('click')
-})
-//
+
+$( function() {
+  $( ".mobile-nav" ).accordion({
+    collapsible: true,
+    active:false
+  });
+} );
 
 // Go top btn
 var btn = $('.gotop');
