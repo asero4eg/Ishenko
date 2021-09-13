@@ -17,7 +17,7 @@ $(function () {
 });
 
 // Go top btn
-var btn = $('.gotop');
+let btn = $('.gotop');
 
 $(window).scroll(function () {
   if ($(window).scrollTop() > 300) {
@@ -153,3 +153,33 @@ tippy('.footer-copyright', {
   followCursor: true,
   maxWidth: 450,
 });
+
+//Logo interactive
+
+let x;
+let logo = $(".l-img");
+
+logo.on("mousemove touchmove", function (e) {
+  // normalise touch/mouse
+  let pos = [e.offsetX, e.offsetY];
+  e.preventDefault();
+  let $card = $(this);
+  // math for mouse position
+  var l = pos[0];
+  var t = pos[1];
+  var h = $card.height();
+  var w = $card.width();
+  var px = Math.abs(Math.floor(100 / w * l) - 100);
+  var py = Math.abs(Math.floor(100 / h * t) - 100);
+  var lp = (50 + (px - 50) / 1.5);
+  var tp = (50 + (py - 50) / 1.5);
+  var ty = ((tp - 50) / 2) * -1;
+  var tx = ((lp - 50) / 1.5) * .5;
+  let tf = `transform: rotateX(${ty * 2}deg) rotateY(${tx * 2}deg)`
+  e.target.style = tf;
+
+})
+logo.on('mouseout', function (e) {
+  e.preventDefault();
+  document.querySelector('.l-img').style.transform = `rotateX(0) rotateY(0)`
+})
