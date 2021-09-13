@@ -1802,6 +1802,10 @@ a {
   .service-half {
     box-shadow: none;
   }
+
+  .faq-title {
+    font-size: 2.8rem;
+  }
 }
 @media screen and (max-width: 760px) {
   .container {
