@@ -1940,6 +1940,7 @@ a {
   }
   .mobile-nav-item a {
     position: relative;
+    display: block;
     z-index: 1002;
     font-size: 1.8rem;
     color: white;
@@ -1952,8 +1953,9 @@ a {
     background: #ff8944;
     background: linear-gradient(234deg, #ff8944 0%, #ffdf00 74%);
     bottom: -8px;
+    opacity: 0.7;
     left: 50%;
-    width: 35px;
+    width: 60%;
     height: 2px;
     transform: translateX(-50%);
   }
@@ -2147,6 +2149,7 @@ a {
   .about-us .text .main {
     font-size: 1.3rem;
     line-height: 2.5rem;
+    padding: 0 15px;
   }
   .about-us .text .subtext {
     padding: 0 10px;
