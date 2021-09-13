@@ -147,3 +147,9 @@ $(document).ready(function () {
     $(this).toggleClass('active').next().slideToggle(300)
   })
 })
+// Footer tooltip
+$( function() {
+  $( '.footer-copyright' ).tooltip({
+    track: true
+  });
+} );
