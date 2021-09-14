@@ -9,11 +9,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 //Header navigation accordeon
 
+// $(function () {
+//   $(".mobile-nav").accordion({
+//     collapsible: true,
+//     active: false
+//   });
+// });
+
 $(function () {
-  $(".mobile-nav").accordion({
-    collapsible: true,
-    active: false
-  });
+
+    let element = $(`.mobile-nav`);
+    element.find('.mobile-nav-content').slice(1).hide();
+    element.find('.mobile-nav').click(function () {
+      $(this).parent().toggleClass('active').siblings().removeClass('active');
+      element.find('.mobile-nav-content').slideUp();
+
+      if (!$(this).next().is(":visible")) {
+        $(this).next().slideDown();
+      }
+    });
 });
 
 // Go top btn

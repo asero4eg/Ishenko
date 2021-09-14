@@ -529,6 +529,7 @@ a {
 .icon-speed:before {
   content: "";
   vertical-align: middle;
+  top: 47%;
 }
 
 .icon-top-secret:before {
