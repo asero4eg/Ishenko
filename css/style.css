@@ -742,7 +742,6 @@ a {
   fill: #ffe427;
 }
 .logo-img img {
-  transition: transform 0.05s ease-in;
   width: 200px;
 }
 
