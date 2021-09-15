@@ -157,7 +157,7 @@ tippy('.footer-copyright', {
 
 let counter = 0;
 const updateRate = 10;
-const limit = 45;
+const limit = 450;
 const tiltable = document.getElementById("logo");
 
 function updateNow() {
