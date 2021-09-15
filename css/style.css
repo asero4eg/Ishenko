@@ -741,7 +741,7 @@ a {
 
 .logo-img {
   fill: #ffe427;
-  perspective: 15px;
+  perspective: 30px;
 }
 .logo-img img {
   width: 200px;
