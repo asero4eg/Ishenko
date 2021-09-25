@@ -7,6 +7,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
 //Header navigation accordeon
 
 $(function () {
@@ -100,7 +101,7 @@ const blocks = ['workflow', 'services', 'why-us', 'about-us', 'faq', 'form-secti
 function addBlur() {
   for (let i of blocks) {
     let element = document.querySelector(`#${i}`);
-    element.style.filter = 'blur(3px)';
+    element.style.filter = 'blur(3px) grayscale(1)';
   }
 }
 
@@ -108,7 +109,7 @@ function addBlur() {
 function removeBlur() {
   for (let i of blocks) {
     let element = document.querySelector(`#${i}`);
-    element.style.filter = 'blur(0)';
+    element.style.filter = 'none';
   }
 }
 
@@ -153,6 +154,23 @@ tippy('.footer-copyright', {
   followCursor: true,
   maxWidth: 450,
 });
+
+//Form validation
+function phonenumber() {
+  let phoneInput = document.querySelector('#U_Phone');
+  var phoneno = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+  if (phoneInput.value.match(phoneno)) {
+    return true;
+  }
+  else {
+    document.querySelector('.form-btn').preventDefault()
+    alert("Неправильно набран номер");
+    return false;
+  }
+}
+document.querySelector('.form-btn').addEventListener('click', phonenumber)
+
+
 // Phone gyro rotate
 
 let counter = 0;
@@ -161,21 +179,21 @@ const limit = 450;
 const tiltable = document.getElementById("logo");
 
 function updateNow() {
-    return counter++ % updateRate === 0;
+  return counter++ % updateRate === 0;
 };
 
-window.addEventListener("deviceorientation", function(event) {
+window.addEventListener("deviceorientation", function (event) {
   if (updateNow()) {
     let position = Math.round(event.gamma);
     if (Math.abs(position) > limit) {
-       if (position > limit) {
-            position = limit;
-        } else {
-            position = -limit;
-                }
-        }
+      if (position > limit) {
+        position = limit;
+      } else {
+        position = -limit;
+      }
+    }
     position = position / -100;
     let style = "rotateY(" + position + "deg)";
     tiltable.style.transform = style;
-    }
+  }
 });
