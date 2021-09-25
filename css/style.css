@@ -615,7 +615,7 @@ a {
   height: 50px;
   width: 50px;
   border-radius: 50%;
-  background-color: #ffe427;
+  background-color: #FFF7BC;
   -webkit-tap-highlight-color: transparent;
   text-align: center;
   -webkit-animation: gotopAnim 1s ease-in 1s infinite;
@@ -702,7 +702,7 @@ a {
   color: white;
 }
 .contacts-left li a:hover {
-  color: #ffe427;
+  color: #FFF7BC;
 }
 .contacts-left .phone {
   font-weight: 500;
@@ -718,7 +718,7 @@ a {
 }
 
 .logo-img {
-  fill: #ffe427;
+  fill: #FFF7BC;
   perspective: 5px;
 }
 .logo-img #logo {
@@ -727,13 +727,15 @@ a {
 }
 
 .logo-text {
-  color: #ffe427;
+  color: #FFF7BC;
 }
 .logo-text .small {
+  font-family: "Playfair Display", serif;
   font-size: 1.4rem;
   margin-top: 10px;
 }
 .logo-text .regular {
+  font-family: "Playfair Display", serif;
   margin-top: 10px;
   font-size: 2rem;
   font-weight: bold;
@@ -773,7 +775,7 @@ a {
 }
 
 .yellow {
-  color: #ffe427;
+  color: #FFF7BC;
   font-weight: 900;
 }
 
@@ -840,7 +842,7 @@ a {
 }
 .header-nav ul li a:hover {
   cursor: pointer;
-  color: #ffe427;
+  color: #FFF7BC;
 }
 
 .mobile-nav-wrapper {
@@ -1023,7 +1025,7 @@ a {
   align-items: center;
   width: 138px;
   height: 138px;
-  border: 3px solid #ffe427;
+  border: 3px solid #FFF7BC;
   border-radius: 50%;
   box-shadow: 0px 0px 15px -3px rgba(34, 60, 80, 0.2);
   -webkit-animation: pulse 1.3s infinite;
@@ -1199,7 +1201,7 @@ a {
   transform: translateY(-50%);
   width: 3px;
   height: 100%;
-  background-color: #ffe427;
+  background-color: #FFF7BC;
 }
 .footnote .title {
   font-family: "Varela Round", Sans-serif;
@@ -1486,10 +1488,12 @@ a {
 }
 
 .advantage {
+  position: relative;
   cursor: default;
   width: 285px;
   padding: 19px 40px 60px;
   transition: box-shadow 0.2s ease-in;
+  border-radius: 3px;
 }
 .advantage:hover {
   box-shadow: 0px 3px 11px -3px rgba(112, 112, 112, 0.2);
@@ -1646,7 +1650,7 @@ a {
   outline: none;
   background-color: #fff;
   padding: 17px 0 17px 35px;
-  border-bottom: 3px solid #ffe427;
+  border-bottom: 3px solid #FFF7BC;
 }
 
 .form-btn {
